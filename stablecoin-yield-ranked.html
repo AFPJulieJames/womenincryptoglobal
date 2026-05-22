@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WICG Facebook Assets</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@400;500;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', sans-serif;
+  background: #faf7f2;
+  color: #0a0a0a;
+  padding: 40px;
+}
+.container { max-width: 1100px; margin: 0 auto; }
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin-bottom: 6px;
+}
+.subtitle { color: #6b6660; font-size: 14px; margin-bottom: 36px; }
+
+.panel {
+  background: #f5f0e8;
+  padding: 50px 40px 36px;
+  margin-bottom: 24px;
+  position: relative;
+}
+.panel-label {
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  font-size: 10px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6b6660;
+}
+.panel-specs {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  font-family: 'Inter', monospace;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #6b6660;
+}
+.asset-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.notes {
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 16px;
+  font-size: 13px;
+  color: #6b6660;
+  line-height: 1.6;
+}
+.notes strong { color: #0a0a0a; }
+.notes code {
+  background: #fff;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>WICG Facebook assets</h1>
+<p class="subtitle">Cover photo (820×312, the standard FB Page cover dimension) and profile picture (180×180, displayed as a circle).</p>
+
+<!-- ================================
+     FACEBOOK COVER PHOTO 820x312
+     ================================ -->
+<div class="panel">
+  <div class="panel-label">Facebook Cover Photo</div>
+  <div class="panel-specs">820 × 312 PX · PNG OR JPG</div>
+  
+  <div class="asset-wrap">
+    <svg width="820" height="312" viewBox="0 0 820 312" xmlns="http://www.w3.org/2000/svg" style="background:#faf7f2; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+      <!-- Paper background -->
+      <rect width="820" height="312" fill="#faf7f2"/>
+      
+      <!-- Top hairline meta -->
+      <text x="410" y="38" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0a0a0a" text-anchor="middle" letter-spacing="3">EST. 2021 · INDEPENDENT · THE PUBLICATION CRYPTO'S WOMEN READ FIRST</text>
+      
+      <!-- Top double rule -->
+      <line x1="60" y1="58" x2="760" y2="58" stroke="#0a0a0a" stroke-width="2"/>
+      <line x1="60" y1="62" x2="760" y2="62" stroke="#0a0a0a" stroke-width="1"/>
+      
+      <!-- Masthead -->
+      <text x="410" y="148" font-family="Playfair Display, Georgia, serif" font-size="84" font-weight="900" fill="#0a0a0a" text-anchor="middle" letter-spacing="-3">
+        WOMEN<tspan font-style="italic" font-weight="400" fill="#a8884a"> in </tspan>CRYPTO
+      </text>
+      
+      <!-- Subtitle italic -->
+      <text x="410" y="200" font-family="Playfair Display, Georgia, serif" font-size="42" font-style="italic" font-weight="400" fill="#0a0a0a" text-anchor="middle" letter-spacing="3">Global</text>
+      
+      <!-- Bottom double rule -->
+      <line x1="60" y1="226" x2="760" y2="226" stroke="#0a0a0a" stroke-width="1"/>
+      <line x1="60" y1="230" x2="760" y2="230" stroke="#0a0a0a" stroke-width="2"/>
+      
+      <!-- Tagline -->
+      <text x="410" y="262" font-family="Playfair Display, Georgia, serif" font-size="18" font-style="italic" font-weight="400" fill="#0a0a0a" text-anchor="middle" letter-spacing="0.5">Real-world assets. Stablecoin yield. Regulation that matters.</text>
+      
+      <!-- URL footer -->
+      <text x="410" y="290" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#a8884a" text-anchor="middle" letter-spacing="3">WOMENINCRYPTOGLOBAL.COM</text>
+    </svg>
+  </div>
+  
+  <div class="notes">
+    <strong>How to save:</strong> Right-click the cover above, select "Save Image As" (or use the export button below). If your browser saves it as SVG, you'll need to convert to PNG/JPG for Facebook. Easiest path: open the saved SVG in <code>cloudconvert.com</code> or <code>svgtopng.com</code>, export at 2x (1640×624) for retina sharpness, save as PNG.
+    <br><br>
+    <strong>FB notes:</strong> Cover photos display at 820×312 on desktop and 640×360 on mobile. Facebook crops the top/bottom slightly on mobile, so the masthead is centered vertically with breathing room above and below. The hairline meta line at top and tagline at bottom may get cropped on mobile, but the masthead and "Global" will always be visible.
+  </div>
+</div>
+
+<!-- ================================
+     FACEBOOK PROFILE PIC 180x180
+     ================================ -->
+<div class="panel">
+  <div class="panel-label">Facebook Profile Picture (for FB Group)</div>
+  <div class="panel-specs">180 × 180 PX · DISPLAYED AS CIRCLE</div>
+  
+  <div class="asset-wrap" style="gap: 40px;">
+    <!-- Square version for upload -->
+    <div style="text-align:center;">
+      <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" style="box-shadow:0 4px 16px rgba(0,0,0,0.12);">
+        <!-- Ink background -->
+        <rect width="180" height="180" fill="#0a0a0a"/>
+        <!-- Top gold rule -->
+        <line x1="36" y1="58" x2="144" y2="58" stroke="#c9a961" stroke-width="2.5"/>
+        <!-- W centered between rules (math: rules at 58 and 122, midpoint 90, W baseline at 114 = (58+122)/2 + cap-height/2 -->
+        <text x="90" y="114" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="900" fill="#f5f0e8" text-anchor="middle" letter-spacing="-2.5">W</text>
+        <!-- Bottom gold rule -->
+        <line x1="36" y1="122" x2="144" y2="122" stroke="#c9a961" stroke-width="2.5"/>
+      </svg>
+      <div style="margin-top:14px; font-size:11px; letter-spacing:2px; color:#6b6660; font-family:Inter, sans-serif; font-weight:600;">SQUARE 180×180 (UPLOAD THIS)</div>
+    </div>
+    
+    <!-- Circle preview to show how FB will display it -->
+    <div style="text-align:center;">
+      <div style="width:180px; height:180px; border-radius:50%; overflow:hidden; box-shadow:0 4px 16px rgba(0,0,0,0.12); background:#0a0a0a;">
+        <svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+          <rect width="180" height="180" fill="#0a0a0a"/>
+          <line x1="36" y1="58" x2="144" y2="58" stroke="#c9a961" stroke-width="2.5"/>
+          <text x="90" y="114" font-family="Playfair Display, Georgia, serif" font-size="64" font-weight="900" fill="#f5f0e8" text-anchor="middle" letter-spacing="-2.5">W</text>
+          <line x1="36" y1="122" x2="144" y2="122" stroke="#c9a961" stroke-width="2.5"/>
+        </svg>
+      </div>
+      <div style="margin-top:14px; font-size:11px; letter-spacing:2px; color:#6b6660; font-family:Inter, sans-serif; font-weight:600;">CIRCLE PREVIEW (HOW FB DISPLAYS)</div>
+    </div>
+  </div>
+  
+  <div class="notes">
+    <strong>How to save:</strong> Right-click the square version (left), select "Save Image As." If it saves as SVG, convert to PNG via cloudconvert.com. Upload at 2x (360×360) for retina display quality.
+    <br><br>
+    <strong>FB display:</strong> Facebook crops profile pictures into a circle. The W and gold rules are positioned with safe margins so nothing important gets cropped. The W will be perfectly centered in the circle on every device.
+    <br><br>
+    <strong>Use this on:</strong> Your WICG Facebook Group, Facebook Page, and as a fallback anywhere else (Instagram, X/Twitter, LinkedIn) where you need a square profile mark. It will look identical to your site favicon, building visual consistency across every channel where your audience encounters WICG.
+  </div>
+</div>
+
+<!-- ================================
+     EXTRA: COVER PHOTO ALTERNATIVE WITH STAT
+     ================================ -->
+<div class="panel">
+  <div class="panel-label">Optional Alternative: Cover with Stat Card</div>
+  <div class="panel-specs">820 × 312 PX · MORE VISUAL IMPACT</div>
+  
+  <div class="asset-wrap">
+    <svg width="820" height="312" viewBox="0 0 820 312" xmlns="http://www.w3.org/2000/svg" style="background:#faf7f2; box-shadow:0 4px 24px rgba(0,0,0,0.08);">
+      <rect width="820" height="312" fill="#faf7f2"/>
+      
+      <!-- Left half: masthead -->
+      <text x="40" y="58" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0a0a0a" letter-spacing="3">EST. 2021 · INDEPENDENT</text>
+      <line x1="40" y1="74" x2="460" y2="74" stroke="#0a0a0a" stroke-width="2"/>
+      <line x1="40" y1="78" x2="460" y2="78" stroke="#0a0a0a" stroke-width="1"/>
+      
+      <text x="40" y="140" font-family="Playfair Display, Georgia, serif" font-size="48" font-weight="900" fill="#0a0a0a" letter-spacing="-2">WOMEN</text>
+      <text x="40" y="180" font-family="Playfair Display, Georgia, serif" font-size="48" font-style="italic" font-weight="400" fill="#a8884a" letter-spacing="-1">in CRYPTO</text>
+      <text x="40" y="220" font-family="Playfair Display, Georgia, serif" font-size="38" font-style="italic" font-weight="400" fill="#0a0a0a" letter-spacing="2">Global</text>
+      
+      <line x1="40" y1="240" x2="460" y2="240" stroke="#0a0a0a" stroke-width="1"/>
+      <line x1="40" y1="244" x2="460" y2="244" stroke="#0a0a0a" stroke-width="2"/>
+      
+      <text x="40" y="272" font-family="Playfair Display, Georgia, serif" font-size="14" font-style="italic" fill="#0a0a0a">RWA · DeFi · Stablecoin Yield · Regulation</text>
+      <text x="40" y="294" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#a8884a" letter-spacing="2">WOMENINCRYPTOGLOBAL.COM</text>
+      
+      <!-- Right half: stat card -->
+      <rect x="510" y="50" width="270" height="212" fill="#0a0a0a"/>
+      <rect x="502" y="42" width="270" height="212" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+      
+      <text x="535" y="88" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#c9a961" letter-spacing="3">THE NUMBERS</text>
+      <text x="535" y="180" font-family="Playfair Display, Georgia, serif" font-size="96" font-weight="300" fill="#f5f0e8" letter-spacing="-4">44<tspan font-style="italic" fill="#c9a961">%</tspan></text>
+      <line x1="535" y1="200" x2="755" y2="200" stroke="#c9a961" stroke-width="0.5" opacity="0.4"/>
+      <text x="535" y="222" font-family="Inter, sans-serif" font-size="11" fill="#f5f0e8" opacity="0.8">
+        <tspan x="535" dy="0">Of new US crypto wallets</tspan>
+        <tspan x="535" dy="14">in 2026 are women.</tspan>
+      </text>
+    </svg>
+  </div>
+  
+  <div class="notes">
+    <strong>Use this version</strong> if you want more editorial energy. It leads with the masthead on the left and the headline 44% stat on the right, mirroring your homepage hero. More visually striking, but slightly busier than the centered version above. Pick whichever feels right for your brand voice.
+  </div>
+</div>
+
+</div>
+</body>
+</html>
