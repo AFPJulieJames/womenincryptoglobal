@@ -17,7 +17,7 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://womenincryptoglobal.com/">
-<meta property="og:title" content="Women in Crypto Global — News & Analysis for Women in Web3">
+<meta property="og:title" content="Women in Crypto Global: News & Analysis for Women in Web3">
 <meta property="og:description" content="The leading media platform for women in crypto. Daily news, RWA analysis, beginner guides, and a global community of 8,000+ women.">
 <meta property="og:image" content="https://womenincryptoglobal.com/og-image.jpg">
 <meta property="og:site_name" content="Women in Crypto Global">
@@ -25,7 +25,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://womenincryptoglobal.com/">
-<meta name="twitter:title" content="Women in Crypto Global — News & Analysis for Women in Web3">
+<meta name="twitter:title" content="Women in Crypto Global: News & Analysis for Women in Web3">
 <meta name="twitter:description" content="The leading media platform for women in crypto. Daily news, RWA analysis, beginner guides, and a global community.">
 <meta name="twitter:image" content="https://womenincryptoglobal.com/og-image.jpg">
 
@@ -98,7 +98,7 @@
       "name": "What is RWA in crypto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "RWA stands for Real World Assets — physical or traditional financial instruments like real estate, US Treasuries, gold, or private credit that have been tokenized on a blockchain. As of 2026, tokenized RWAs (excluding stablecoins) exceed $30 billion on-chain, with BlackRock's BUIDL and Ondo Finance leading institutional adoption."
+        "text": "RWA stands for Real World Assets: physical or traditional financial instruments like real estate, US Treasuries, gold, or private credit that have been tokenized on a blockchain. As of 2026, tokenized RWAs (excluding stablecoins) exceed $30 billion on-chain, with BlackRock's BUIDL and Ondo Finance leading institutional adoption."
       }
     },
     {
@@ -1049,7 +1049,7 @@ section { padding: 100px 0; }
 </head>
 <body>
 
-<h1 class="sr-only">Women in Crypto Global — The Leading Media Platform for Women in Cryptocurrency, Web3, and Blockchain</h1>
+<h1 class="sr-only">Women in Crypto Global: The Leading Media Platform for Women in Cryptocurrency, Web3, and Blockchain</h1>
 
 <!-- ============================================
      LIVE CRYPTO TICKER
@@ -1102,7 +1102,7 @@ section { padding: 100px 0; }
       <div class="hero-eyebrow">The publication crypto's women read first</div>
       <h1>Crypto is being rewritten. <em>Women</em> are holding the pen.</h1>
       <p class="hero-sub">
-        Daily reporting, sharp analysis, and education for the 44% of new wallet holders changing what crypto looks like. Real-world assets, stablecoin yield, regulation that matters — no bro energy, no shilling, no shortcuts.
+        Daily reporting, sharp analysis, and education for the 44% of new wallet holders changing what crypto looks like. Real-world assets, stablecoin yield, regulation that matters. No bro energy, no shilling, no shortcuts.
       </p>
       <form class="hero-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
         <label class="sr-only" for="hero-email">Email address</label>
@@ -1118,7 +1118,7 @@ section { padding: 100px 0; }
         <div class="hero-stat-label">The Numbers</div>
         <div class="hero-stat-number"><em>44</em>%</div>
         <div class="hero-stat-desc">
-          of new US crypto wallet registrations in 2026 are women — up from 22% just two years ago. The fastest-growing demographic in the entire asset class.
+          of new US crypto wallet registrations in 2026 are women, up from 22% just two years ago. The fastest-growing demographic in the entire asset class.
         </div>
         <div class="hero-stat-source">SOURCE: COINLAW 2026 / SECURITY.ORG</div>
       </div>
@@ -1168,7 +1168,7 @@ section { padding: 100px 0; }
         <div class="story-img story-img-1" role="img" aria-label="BlackRock BUIDL tokenized treasury fund"></div>
         <div class="story-cat">RWA · ANALYSIS</div>
         <h3 class="story-title">BlackRock's BUIDL just crossed $3B. Here's why every woman building wealth should care.</h3>
-        <p class="story-excerpt">Tokenized Treasuries are the quiet revolution. They're conservative, they yield 4-5%, they settle 24/7 — and they're the on-ramp women have been waiting for. We break down what BUIDL, Ondo, and Maple mean for portfolios that aren't chasing 100x.</p>
+        <p class="story-excerpt">Tokenized Treasuries are the quiet revolution. They're conservative, they yield 4-5%, they settle 24/7, and they're the on-ramp women have been waiting for. We break down what BUIDL, Ondo, and Maple mean for portfolios that aren't chasing 100x.</p>
         <div class="story-meta"><strong>RWA</strong> · 9 min read · Updated today</div>
       </article>
 
@@ -1176,7 +1176,7 @@ section { padding: 100px 0; }
         <div class="story-img story-img-2" role="img" aria-label="Stablecoin yield strategies"></div>
         <div class="story-cat">DeFi · GUIDE</div>
         <h3 class="story-title">Stablecoin yield without the smoke and mirrors</h3>
-        <p class="story-excerpt">A risk-graded look at where you can actually earn 5-12% on USDC right now — and which "yields" are accidents waiting to happen.</p>
+        <p class="story-excerpt">A risk-graded look at where you can actually earn 5-12% on USDC right now, and which "yields" are accidents waiting to happen.</p>
         <div class="story-meta"><strong>DeFi</strong> · 6 min read</div>
       </article>
 
@@ -1192,7 +1192,7 @@ section { padding: 100px 0; }
         <div class="story-img story-img-4" role="img" aria-label="Crypto scam prevention"></div>
         <div class="story-cat">SECURITY</div>
         <h3 class="story-title">The five scams targeting women in crypto right now</h3>
-        <p class="story-excerpt">Pig butchering, fake romance, AI deepfake "advisors." We talked to women who lost — and women who almost lost — and built the field guide.</p>
+        <p class="story-excerpt">Pig butchering, fake romance, AI deepfake "advisors." We talked to women who lost and women who almost lost, and built the field guide.</p>
         <div class="story-meta"><strong>Security</strong> · 8 min read</div>
       </article>
 
@@ -1208,7 +1208,7 @@ section { padding: 100px 0; }
         <div class="story-img story-img-1" role="img" aria-label="Women crypto founders"></div>
         <div class="story-cat">PROFILE</div>
         <h3 class="story-title">The women quietly building the rails of Web3 finance</h3>
-        <p class="story-excerpt">Five founders you haven't heard of yet — running infrastructure, custody, compliance, and tokenization platforms moving billions.</p>
+        <p class="story-excerpt">Five founders you haven't heard of yet, running infrastructure, custody, compliance, and tokenization platforms moving billions.</p>
         <div class="story-meta"><strong>Profile</strong> · 14 min read</div>
       </article>
     </div>
@@ -1229,8 +1229,8 @@ section { padding: 100px 0; }
 
     <div class="rwa-grid">
       <div class="rwa-lead">
-        <p>Real-World Assets — tokenized Treasuries, tokenized real estate, tokenized private credit, tokenized gold — are the bridge between traditional finance and crypto that institutions have been quietly building for three years. As of April 2026, over <strong>$30 billion</strong> in RWAs sit on-chain (excluding stablecoins). BlackRock's BUIDL fund alone has crossed $3B.</p>
-        <p>This matters for women specifically. Studies consistently show female investors prefer conservative, yield-bearing, fundamentals-backed assets. RWAs deliver exactly that — real cash flows, audited backing, regulatory clarity — with the 24/7 settlement and fractional ownership that blockchain unlocks.</p>
+        <p>Real-World Assets (tokenized Treasuries, tokenized real estate, tokenized private credit, tokenized gold) are the bridge between traditional finance and crypto that institutions have been quietly building for three years. As of April 2026, over <strong>$30 billion</strong> in RWAs sit on-chain (excluding stablecoins). BlackRock's BUIDL fund alone has crossed $3B.</p>
+        <p>This matters for women specifically. Studies consistently show female investors prefer conservative, yield-bearing, fundamentals-backed assets. RWAs deliver exactly that (real cash flows, audited backing, regulatory clarity) with the 24/7 settlement and fractional ownership that blockchain unlocks.</p>
         <p>This isn't speculation. It's infrastructure. And the women who learn it now will be the advisors, builders, and allocators of the next decade.</p>
         <a href="#rwa-explainer" class="rwa-cta">Read the RWA Primer</a>
       </div>
@@ -1242,7 +1242,7 @@ section { padding: 100px 0; }
         </div>
         <div class="rwa-stat-item">
           <div class="rwa-stat-num">45<em>%</em></div>
-          <div class="rwa-stat-desc">Of tokenized RWAs are US Treasuries — the largest category and the most accessible.</div>
+          <div class="rwa-stat-desc">Of tokenized RWAs are US Treasuries. The largest category and the most accessible.</div>
         </div>
         <div class="rwa-stat-item">
           <div class="rwa-stat-num"><em>$100</em>B</div>
@@ -1277,7 +1277,7 @@ section { padding: 100px 0; }
       <article class="learn-card">
         <div class="learn-num">02 / WALLETS</div>
         <h3>Hot, cold, and the in-between: choosing your wallet</h3>
-        <p>Why "not your keys, not your coins" matters more than ever, and how to actually self-custody without losing sleep — or your seed phrase.</p>
+        <p>Why "not your keys, not your coins" matters more than ever, and how to actually self-custody without losing sleep (or your seed phrase).</p>
         <a href="#guide-wallets" class="learn-link">Read the Guide →</a>
       </article>
 
@@ -1305,7 +1305,7 @@ section { padding: 100px 0; }
       <article class="learn-card">
         <div class="learn-num">06 / SECURITY</div>
         <h3>How to spot a scam before it costs you</h3>
-        <p>The current playbook of crypto fraudsters — pig butchering, romance scams, deepfakes — and the five checks that catch 90% of them.</p>
+        <p>The current playbook of crypto fraudsters (pig butchering, romance scams, deepfakes) and the five checks that catch 90% of them.</p>
         <a href="#guide-security" class="learn-link">Read the Guide →</a>
       </article>
     </div>
@@ -1318,9 +1318,9 @@ section { padding: 100px 0; }
 <section class="manifesto">
   <div class="manifesto-text">
     "The next financial system isn't being built <em>for</em> women.<br>
-    It's being built <em>by</em> us — quietly, deliberately, and in numbers the industry hasn't fully noticed yet."
+    It's being built <em>by</em> us. Quietly, deliberately, and in numbers the industry hasn't fully noticed yet."
   </div>
-  <div class="manifesto-attr">— THE WICG EDITORIAL POSITION</div>
+  <div class="manifesto-attr">THE WICG EDITORIAL POSITION</div>
 </section>
 
 <!-- ============================================
@@ -1336,7 +1336,7 @@ section { padding: 100px 0; }
       <div class="section-eyebrow">The Community</div>
       <h2 class="section-title" style="margin-bottom: 24px;">Eight thousand women. <em>One</em> conversation.</h2>
       <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 32px;">
-        From first-wallet questions to RWA portfolio strategy, the WICG community is where women — beginners and builders — actually talk to each other about crypto. No gatekeeping. No bro energy. No dumb questions.
+        From first-wallet questions to RWA portfolio strategy, the WICG community is where women (beginners and builders) actually talk to each other about crypto. No gatekeeping. No bro energy. No dumb questions.
       </p>
       <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 40px;">
         A premium tier is launching this summer with curated discussions, monthly office hours, and member-only research. Join the waitlist below.
@@ -1385,11 +1385,11 @@ section { padding: 100px 0; }
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">What's the difference between WICG and the community?</div>
-        <div class="faq-a">WICG (this site) is the publication: news, analysis, education. The community — currently an 8,000-member Facebook group — is where readers talk to each other. Both are free. A premium community tier with deeper resources is launching summer 2026.</div>
+        <div class="faq-a">WICG (this site) is the publication: news, analysis, education. The community (currently an 8,000-member Facebook group) is where readers talk to each other. Both are free. A premium community tier with deeper resources is launching summer 2026.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">Why focus on RWA so much?</div>
-        <div class="faq-a">Three reasons. One: it's the fastest-growing sector in crypto right now. Two: research consistently shows women prefer conservative, yield-bearing, fundamentals-backed assets — exactly what RWAs are. Three: institutional money is flooding in (BlackRock, Fidelity, KKR), which means the asset class is maturing fast and the early-learners benefit most.</div>
+        <div class="faq-a">Three reasons. One: it's the fastest-growing sector in crypto right now. Two: research consistently shows women prefer conservative, yield-bearing, fundamentals-backed assets, exactly what RWAs are. Three: institutional money is flooding in (BlackRock, Fidelity, KKR), which means the asset class is maturing fast and the early-learners benefit most.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">Is this investment advice?</div>
@@ -1397,7 +1397,7 @@ section { padding: 100px 0; }
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">Who founded WICG?</div>
-        <div class="faq-a">WICG was founded in 2021 by a community of women already active in crypto education and content. We grew from a private Facebook group of a few hundred to over 8,000 members, and the publication launched in 2026 to serve that audience and the broader female crypto demographic — now 41% of all new crypto users globally.</div>
+        <div class="faq-a">WICG was founded in 2021 by a community of women already active in crypto education and content. We grew from a private Facebook group of a few hundred to over 8,000 members, and the publication launched in 2026 to serve that audience and the broader female crypto demographic, now 41% of all new crypto users globally.</div>
       </div>
     </div>
   </div>
@@ -1516,7 +1516,7 @@ async function loadTicker() {
 function handleSubscribe(e) {
   e.preventDefault();
   const email = e.target.querySelector('input[type="email"]').value;
-  alert(`Thanks! ${email} added to the WICG newsletter list. (Connect this form to your email platform — Beehiiv/Substack/ConvertKit.)`);
+  alert(`Thanks! ${email} added to the WICG newsletter list. (Connect this form to your email platform: Beehiiv, Substack, or ConvertKit.)`);
   e.target.reset();
 }
 
