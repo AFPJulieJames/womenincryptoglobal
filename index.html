@@ -596,7 +596,7 @@ section { padding: 100px 0; }
   font-weight: 600;
   margin-bottom: 12px;
 }
-/* Featured story keeps a visual (only on the main lead story) */
+/* Featured story keeps a visual */
 .story-card.featured .story-img {
   width: 100%;
   aspect-ratio: 16/10;
@@ -609,17 +609,9 @@ section { padding: 100px 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 50%),
-    linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%);
+  background: radial-gradient(circle at 70% 30%, rgba(255,255,255,0.08) 0%, transparent 50%), linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.4) 100%);
 }
-
-/* Secondary stories: hide image entirely, use typography */
-.story-card:not(.featured) .story-img {
-  display: none;
-}
-
-/* Editorial typography styling for non-featured cards */
+.story-card:not(.featured) .story-img { display: none; }
 .story-card:not(.featured) {
   border-top: 2px solid var(--ink);
   padding-top: 20px;
@@ -638,20 +630,14 @@ section { padding: 100px 0; }
   font-weight: 700;
 }
 .editorial-grid { counter-reset: story-counter; }
-.story-card:not(.featured) .story-cat {
-  margin-bottom: 8px;
-}
+.story-card:not(.featured) .story-cat { margin-bottom: 8px; }
 .story-card:not(.featured) .story-excerpt {
   border-left: 2px solid var(--rule);
   padding-left: 14px;
   margin-top: 12px;
 }
-.story-card:not(.featured):hover {
-  border-top-color: var(--gold-deep);
-}
-.story-card:not(.featured):hover::before {
-  color: var(--ink);
-}
+.story-card:not(.featured):hover { border-top-color: var(--gold-deep); }
+.story-card:not(.featured):hover::before { color: var(--ink); }
 .story-title {
   font-family: var(--font-serif);
   font-weight: 400;
@@ -1122,7 +1108,7 @@ section { padding: 100px 0; }
     <a href="#learn">Learn</a>
     <a href="#community">Community</a>
     <a href="#newsletter">Newsletter</a>
-    <a href="/our-mission.html">About</a>
+    <a href="#about">About</a>
     <a href="#newsletter" class="nav-cta">Subscribe →</a>
   </div>
 </nav>
@@ -1312,7 +1298,7 @@ section { padding: 100px 0; }
         <div class="learn-num">02 / WALLETS</div>
         <h3>Hot, cold, and the in-between: choosing your wallet</h3>
         <p>Why "not your keys, not your coins" matters more than ever, and how to actually self-custody without losing sleep (or your seed phrase).</p>
-        <a href="#guide-wallets" class="learn-link">Read the Guide →</a>
+        <a href="/crypto-wallets-guide.html" class="learn-link">Read the Guide →</a>
       </article>
 
       <article class="learn-card">
@@ -1333,7 +1319,7 @@ section { padding: 100px 0; }
         <div class="learn-num">05 / TAXES</div>
         <h3>Crypto taxes for US women, demystified</h3>
         <p>What triggers tax, what doesn't, which software actually works, and the costly mistakes we keep seeing in tax season after tax season.</p>
-        <a href="#guide-taxes" class="learn-link">Read the Guide →</a>
+        <a href="/crypto-taxes-2026.html" class="learn-link">Read the Guide →</a>
       </article>
 
       <article class="learn-card">
@@ -1471,11 +1457,11 @@ section { padding: 100px 0; }
       <div class="footer-col">
         <h4>About</h4>
         <ul>
-          <li><a href="/our-mission.html">Our Mission</a></li>
-          <li><a href="/editorial-standards.html">Editorial Standards</a></li>
-          <li><a href="/partner-with-us.html">Partner With Us</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a href="/careers.html">Careers</a></li>
+          <li><a href="#our-mission">Our Mission</a></li>
+          <li><a href="#editorial-standards">Editorial Standards</a></li>
+          <li><a href="#sponsor">Partner With Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#careers">Careers</a></li>
         </ul>
       </div>
       <div class="footer-col">
