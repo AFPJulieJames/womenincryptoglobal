@@ -1049,6 +1049,13 @@ section { padding: 100px 0; }
   font-style: italic;
 }
 .community-art-num span { color: var(--gold); }
+.community-art-num.pro-mark {
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: -3px;
+  color: var(--gold);
+  font-size: clamp(80px, 13vw, 160px);
+}
 .community-art-label {
   position: absolute;
   bottom: 40px;
@@ -1619,22 +1626,32 @@ section { padding: 100px 0; }
 <!-- ============================================
      COMMUNITY CTA
      ============================================ -->
-<section class="community" id="community">
+<section class="community" id="pro">
   <div class="community-inner">
     <div class="community-art">
-      <div class="community-art-num">8<span>K</span>+</div>
-      <div class="community-art-label">MEMBERS · GROWING DAILY</div>
+      <div class="community-art-num pro-mark">PRO</div>
+      <div class="community-art-label">LAUNCHING SUMMER 2026</div>
     </div>
     <div>
-      <div class="section-eyebrow">The Community</div>
-      <h2 class="section-title" style="margin-bottom: 24px;">Eight thousand women. <em>One</em> conversation.</h2>
+      <div class="section-eyebrow">The Waitlist</div>
+      <h2 class="section-title" style="margin-bottom: 24px;">Tokenized Report <em>Pro</em>.</h2>
+      <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 24px;">
+        The paid tier for women who want more than the Sunday brief. Mid-week analysis, the full archive, quarterly research reports, and direct access to the editor. Launching summer 2026.
+      </p>
       <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 32px;">
-        From first-wallet questions to RWA portfolio strategy, the WICG community is where women (beginners and builders) actually talk to each other about crypto. No gatekeeping. No bro energy. No dumb questions.
+        Waitlist members get first access at launch, a founding-member discount, and the chance to shape what Pro becomes. No credit card required.
       </p>
-      <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 40px;">
-        A premium tier is launching this summer with curated discussions, monthly office hours, and member-only research. Join the waitlist below.
+      <form class="hero-form" style="max-width: 480px; margin-bottom: 16px;" id="pro-waitlist-form" onsubmit="handleProWaitlist(event)">
+        <label class="sr-only" for="pro-email">Email address</label>
+        <input type="email" id="pro-email" placeholder="your@email.com" required>
+        <button type="submit">Join the Waitlist</button>
+      </form>
+      <div class="hero-microcopy" style="margin-bottom: 32px;">
+        <strong>Free to join</strong> · No spam · Unsubscribe anytime
+      </div>
+      <p style="font-size: 14px; line-height: 1.6; color: var(--muted); padding-top: 24px; border-top: 1px solid var(--rule);">
+        Looking for the free community? The <a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener" style="color: var(--gold-deep); border-bottom: 1px solid var(--gold);">8,000-member Facebook group</a> is open to everyone.
       </p>
-      <a href="https://www.facebook.com/groups/womenincryptoglobal" class="btn" target="_blank" rel="noopener">Join the Free Community →</a>
     </div>
   </div>
 </section>
@@ -1678,7 +1695,7 @@ section { padding: 100px 0; }
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">What's the difference between WICG and the community?</div>
-        <div class="faq-a">WICG (this site) is the publication: news, analysis, education. The community (currently an 8,000-member Facebook group) is where readers talk to each other. Both are free. A premium community tier with deeper resources is launching summer 2026.</div>
+        <div class="faq-a">WICG (this site) is the publication: news, analysis, education, and the weekly Tokenized Report newsletter. The Facebook community is where 8,000+ readers talk to each other. Both are free. A paid tier (Tokenized Report Pro) launches summer 2026 with mid-week analysis, the full archive, quarterly research reports, and direct access to the editor.</div>
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">Why focus on RWA so much?</div>
@@ -1812,6 +1829,16 @@ function handleSubscribe(e) {
   const email = e.target.querySelector('input[type="email"]').value;
   // Redirect to /tokenized page where Beehiiv form will be embedded
   window.location.href = '/tokenized.html?email=' + encodeURIComponent(email);
+}
+
+function handleProWaitlist(e) {
+  e.preventDefault();
+  const email = e.target.querySelector('input[type="email"]').value;
+  // TODO: Replace with Beehiiv embed code that tags subscriber as 'pro-waitlist'
+  // For now, redirect to a dedicated waitlist page (build /pro.html later)
+  // OR connect directly to Beehiiv API endpoint with tag parameter
+  alert('Thanks! Once Beehiiv is connected, ' + email + ' will be added to the Tokenized Report Pro waitlist. You will be the first to know when Pro launches.');
+  e.target.reset();
 }
 
 loadTicker();
