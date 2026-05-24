@@ -603,7 +603,9 @@ a { color: inherit; text-decoration: none; }
     <div class="signup-label">Subscribe Free</div>
     <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
     <!-- Beehiiv embed: Newsletter Signup form -->
+    <div class="beehiiv-tracker" data-form-type="newsletter">
     <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+      </div>
     <div class="signup-note">No spam. Unsubscribe anytime.</div>
   </div>
 </section>
@@ -700,6 +702,19 @@ a { color: inherit; text-decoration: none; }
     <p>© 2026 WICG · NOT INVESTMENT ADVICE · DYOR</p>
   </div>
 </footer>
-
+<script>
+  document.addEventListener('click', function(e) {
+    const tracker = e.target.closest('.beehiiv-tracker');
+    if (!tracker) return;
+    const formType = tracker.getAttribute('data-form-type') || 'unknown';
+    if (typeof gtag === 'function') {
+      gtag('event', 'subscribe_click', {
+        form_type: formType,
+        page_path: window.location.pathname,
+        page_host: window.location.hostname
+      });
+    }
+  });
+</script>
 </body>
 </html>
