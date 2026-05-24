@@ -8,8 +8,8 @@
      PRIMARY SEO META TAGS
      ============================================ -->
 <title>Women in Crypto Global | News, Analysis & Community for Women in Crypto & Web3</title>
-<meta name="description" content="The leading media platform for women in crypto and Web3. Daily news, RWA analysis, beginner guides, DeFi yields, and a 8,000+ member community. Join the fastest-growing voice in crypto.">
-<meta name="keywords" content="women in crypto, women in web3, crypto for women, women in blockchain, female crypto investors, RWA crypto, real world assets, tokenized treasuries, crypto for beginners women, women crypto community, female web3, women bitcoin, women DeFi, women NFT, crypto education women, stablecoin yield">
+<meta name="description" content="The leading media platform for women in crypto and Web3. Curated news, RWA analysis, beginner guides, stablecoin yield strategies, and an 8,000-member community. The publication women in crypto read first.">
+<meta name="keywords" content="women in crypto, women in web3, crypto for women, women in blockchain, female crypto investors, RWA crypto, real world assets, tokenized treasuries, crypto for beginners women, women crypto community, female web3, women bitcoin, women DeFi, women NFT, crypto education women, stablecoin yield, tokenized">
 <meta name="author" content="Women in Crypto Global">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <link rel="canonical" href="https://womenincryptoglobal.com/">
@@ -18,7 +18,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://womenincryptoglobal.com/">
 <meta property="og:title" content="Women in Crypto Global: News & Analysis for Women in Web3">
-<meta property="og:description" content="The leading media platform for women in crypto. Daily news, RWA analysis, beginner guides, and a global community of 8,000+ women.">
+<meta property="og:description" content="The leading media platform for women in crypto. Curated news, RWA analysis, beginner guides, and a global community of 8,000+ women.">
 <meta property="og:image" content="https://womenincryptoglobal.com/og-image.jpg">
 <meta property="og:site_name" content="Women in Crypto Global">
 
@@ -26,7 +26,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://womenincryptoglobal.com/">
 <meta name="twitter:title" content="Women in Crypto Global: News & Analysis for Women in Web3">
-<meta name="twitter:description" content="The leading media platform for women in crypto. Daily news, RWA analysis, beginner guides, and a global community.">
+<meta name="twitter:description" content="The leading media platform for women in crypto. Curated news, RWA analysis, beginner guides, and a global community.">
 <meta name="twitter:image" content="https://womenincryptoglobal.com/og-image.jpg">
 
 <!-- ============================================
@@ -45,11 +45,15 @@
   "alternateName": "WICG",
   "url": "https://womenincryptoglobal.com",
   "logo": "https://womenincryptoglobal.com/logo.png",
-  "description": "The leading media and community platform for women in cryptocurrency, Web3, and blockchain. News, analysis, education, and networking for the fastest-growing demographic in crypto.",
+  "description": "The leading media and community platform for women in cryptocurrency, Web3, and blockchain. Curated news, analysis, education, and networking for the fastest-growing demographic in crypto.",
   "foundingDate": "2021",
+  "founder": {
+    "@type": "Person",
+    "name": "Julie James"
+  },
   "sameAs": [
     "https://www.facebook.com/groups/womenincryptoglobal",
-    "https://hotofftheblockchain.com"
+    "https://tokenized.report"
   ],
   "audience": {
     "@type": "Audience",
@@ -82,7 +86,7 @@
       "name": "What is Women in Crypto Global?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Women in Crypto Global (WICG) is a media platform and community of over 8,000 women focused on cryptocurrency, blockchain, and Web3. We publish daily news, analysis, and education aimed at the fastest-growing demographic in crypto: women investors."
+        "text": "Women in Crypto Global (WICG) is a media platform and community of over 8,000 women focused on cryptocurrency, blockchain, and Web3. We publish curated news, analysis, and education aimed at the fastest-growing demographic in crypto: women investors."
       }
     },
     {
@@ -98,7 +102,7 @@
       "name": "What is RWA in crypto?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "RWA stands for Real World Assets: physical or traditional financial instruments like real estate, US Treasuries, gold, or private credit that have been tokenized on a blockchain. As of 2026, tokenized RWAs (excluding stablecoins) exceed $30 billion on-chain, with BlackRock's BUIDL and Ondo Finance leading institutional adoption."
+        "text": "RWA stands for Real World Assets: physical or traditional financial instruments like real estate, US Treasuries, gold, or private credit that have been tokenized on a blockchain. As of 2026, tokenized RWAs (excluding stablecoins) exceed $32 billion on-chain, with BlackRock's BUIDL and Ondo Finance leading institutional adoption."
       }
     },
     {
@@ -133,6 +137,7 @@
   --gold-light: #e8d8b3;
   --rule: #e5e0d6;
   --muted: #6b6660;
+  --text-body: #2a2620;
 
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -531,6 +536,165 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 
 /* ============================================
+   THE TAPE SECTION (homepage news)
+   ============================================ */
+.tape-section {
+  background: var(--paper);
+  padding: 80px 0 72px;
+  border-top: 2px solid var(--ink);
+  position: relative;
+}
+.tape-section::before {
+  content: '';
+  position: absolute;
+  top: 4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.tape-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.tape-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+}
+.tape-title {
+  font-family: var(--font-serif);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.tape-title em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--gold-deep);
+  text-transform: none;
+  letter-spacing: -0.5px;
+}
+.tape-tagline {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.tape-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px 40px;
+}
+.tape-item {
+  display: block;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.tape-item:last-child {
+  border-bottom: none;
+}
+.tape-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.tape-item-category {
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 4px 8px;
+}
+.tape-item-date {
+  color: var(--muted);
+}
+.tape-item-headline {
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.tape-item-headline em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+.tape-item-body {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+  margin-bottom: 10px;
+}
+.tape-item-take {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding-left: 16px;
+  border-left: 2px solid var(--gold);
+  margin-bottom: 12px;
+}
+.tape-item-take strong {
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  display: block;
+  margin-bottom: 4px;
+}
+.tape-item-source {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.tape-item-source a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+}
+.tape-footer {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+.tape-archive-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 2px solid var(--gold);
+  padding-bottom: 6px;
+}
+.tape-archive-link:hover { color: var(--gold-deep); }
+
+/* ============================================
    SECTION DEFAULTS
    ============================================ */
 section { padding: 100px 0; }
@@ -585,7 +749,7 @@ section { padding: 100px 0; }
   grid-template-columns: 1.4fr 1fr 1fr;
   gap: 48px;
 }
-.story-card { cursor: pointer; }
+.story-card { cursor: pointer; display: block; }
 .story-card:hover .story-title { color: var(--gold-deep); }
 .story-cat {
   font-family: var(--font-mono);
@@ -596,7 +760,6 @@ section { padding: 100px 0; }
   font-weight: 600;
   margin-bottom: 12px;
 }
-/* Featured story keeps a visual */
 .story-card.featured .story-img {
   width: 100%;
   aspect-ratio: 16/10;
@@ -762,6 +925,7 @@ section { padding: 100px 0; }
   border: 1px solid var(--rule);
   transition: all 0.2s;
   position: relative;
+  display: block;
 }
 .learn-card:hover {
   border-color: var(--ink);
@@ -1040,6 +1204,8 @@ section { padding: 100px 0; }
   .header-meta { padding: 0 var(--gutter); }
   .hero-inner, .rwa-grid, .community-inner { grid-template-columns: 1fr; gap: 48px; }
   .editorial-grid, .learn-grid, .footer-top { grid-template-columns: 1fr; }
+  .tape-grid { grid-template-columns: 1fr; gap: 24px; }
+  .tape-header { flex-direction: column; align-items: flex-start; gap: 6px; }
   .trust-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
   .trust-item:nth-child(2) { border-right: none; }
   .trust-item { padding-right: 0; border-right: none; border-bottom: 1px solid var(--rule); padding-bottom: 16px; }
@@ -1102,14 +1268,13 @@ section { padding: 100px 0; }
      ============================================ -->
 <nav class="nav-bar" aria-label="Primary">
   <div class="nav-inner">
-    <a href="/#news">News</a>
-    <a href="/rwa-primer.html">RWA &amp; Tokenization</a>
-    <a href="/defi.html">DeFi</a>
+    <a href="/news.html">The Tape</a>
+    <a href="/rwa-primer.html">RWA</a>
     <a href="/learn.html">Learn</a>
+    <a href="/tokenized.html">Newsletter</a>
     <a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener">Community</a>
-    <a href="#newsletter">Newsletter</a>
     <a href="/our-mission.html">About</a>
-    <a href="#newsletter" class="nav-cta">Subscribe →</a>
+    <a href="/tokenized.html" class="nav-cta">Subscribe →</a>
   </div>
 </nav>
 
@@ -1122,7 +1287,7 @@ section { padding: 100px 0; }
       <div class="hero-eyebrow">The publication crypto's women read first</div>
       <h1>Crypto is being rewritten. <em>Women</em> are holding the pen.</h1>
       <p class="hero-sub">
-        Daily reporting, sharp analysis, and education for the 44% of new wallet holders changing what crypto looks like. Real-world assets, stablecoin yield, regulation that matters. No bro energy, no shilling, no shortcuts.
+        Curated reporting, sharp analysis, and education for the 44% of new wallet holders changing what crypto looks like. Real-world assets, stablecoin yield, regulation that matters. No bro energy, no shilling, no shortcuts.
       </p>
       <form class="hero-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
         <label class="sr-only" for="hero-email">Email address</label>
@@ -1130,7 +1295,7 @@ section { padding: 100px 0; }
         <button type="submit">Subscribe Free</button>
       </form>
       <div class="hero-microcopy">
-        <strong>8,247 readers</strong> · Published weekly · No spam, ever
+        <strong>Tokenized Report</strong> · Sundays in your inbox · No spam, ever
       </div>
     </div>
     <div class="hero-visual">
@@ -1156,7 +1321,7 @@ section { padding: 100px 0; }
       <div class="trust-label">Community Members</div>
     </div>
     <div class="trust-item">
-      <div class="trust-num"><em>$30</em>B</div>
+      <div class="trust-num"><em>$32</em>B</div>
       <div class="trust-label">RWA Tokenized On-Chain</div>
     </div>
     <div class="trust-item">
@@ -1171,66 +1336,174 @@ section { padding: 100px 0; }
 </div>
 
 <!-- ============================================
-     EDITORIAL / NEWS GRID
+     THE TAPE (curated news section)
      ============================================ -->
-<section class="editorial-section" id="news">
+<section class="tape-section" id="the-tape">
+  <div class="tape-inner">
+
+    <header class="tape-header">
+      <div>
+        <h2 class="tape-title">The <em>Tape</em></h2>
+      </div>
+      <div class="tape-tagline">What we're watching this week</div>
+    </header>
+
+    <div class="tape-grid">
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">RWA</span>
+          <span class="tape-item-date">May 23, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">Tokenized US Treasuries cross <em>$13 billion</em> on-chain, up from $2B at start of 2025</h3>
+        <p class="tape-item-body">RWA.xyz data shows the on-chain value of tokenized US Treasuries reached $13.1 billion this month. BlackRock's BUIDL and Ondo's OUSG dominate the category, with Franklin Templeton's BENJI now contributing meaningfully.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          This is the crypto market most relevant to conservative income strategies. It is not speculative. It is regulated treasury exposure with on-chain settlement, paying real yield.
+        </div>
+        <div class="tape-item-source">Source: <a href="https://rwa.xyz" target="_blank" rel="noopener">RWA.xyz</a></div>
+      </article>
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">Regulation</span>
+          <span class="tape-item-date">May 22, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">SEC clarifies tokenized equity framework, opens path for <em>broader institutional adoption</em></h3>
+        <p class="tape-item-body">New SEC guidance this week provides regulatory clarity on tokenized equities, distinguishing them from speculative crypto assets. The framework allows registered broker-dealers to issue and trade tokenized stocks under existing securities law.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          Regulatory clarity is the single biggest unlock for institutional capital in this space. When the SEC names the rules, asset managers move.
+        </div>
+        <div class="tape-item-source">Source: SEC Press Release</div>
+      </article>
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">Stablecoin Yield</span>
+          <span class="tape-item-date">May 21, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">Yield-bearing stablecoins on pace to <em>triple to $50B</em> by year-end</h3>
+        <p class="tape-item-body">21Shares research projects yield-bearing stablecoins will more than triple to over $50 billion in 2026, driven by institutional treasury allocation and embedded wallet products.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          The shift from stablecoins as parking lots to stablecoins as yield assets is the most consequential structural change in crypto for income-focused portfolios. Worth understanding before allocating.
+        </div>
+        <div class="tape-item-source">Source: 21Shares Research</div>
+      </article>
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">Institutional</span>
+          <span class="tape-item-date">May 20, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">BlackRock's BUIDL expands to <em>Polygon</em>, signaling multi-chain RWA commitment</h3>
+        <p class="tape-item-body">BlackRock's tokenized treasury fund is now available on Polygon in addition to Ethereum, following months of internal evaluation. The expansion brings lower-fee access to retail-scale investors.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          When a $10 trillion asset manager commits engineering resources to multi-chain tokenization, the infrastructure assumption shifts. This is no longer experimental.
+        </div>
+        <div class="tape-item-source">Source: Bloomberg</div>
+      </article>
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">Tokenized Real Estate</span>
+          <span class="tape-item-date">May 19, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">Lofty hits <em>10,000 active investors</em> on Algorand-based real estate platform</h3>
+        <p class="tape-item-body">Tokenized real estate platform Lofty reported 10,000 active investors this month, with minimum investment thresholds as low as $50 for fractional residential property exposure.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          The promise of tokenized real estate, fractional access to property markets, is starting to deliver at meaningful scale. Worth watching as a category, not yet recommending as an allocation.
+        </div>
+        <div class="tape-item-source">Source: Lofty</div>
+      </article>
+
+      <article class="tape-item">
+        <div class="tape-item-meta">
+          <span class="tape-item-category">Worth Reading</span>
+          <span class="tape-item-date">May 18, 2026</span>
+        </div>
+        <h3 class="tape-item-headline">Franklin Templeton CEO: <em>"Bitcoin is the biggest distraction"</em> from tokenized assets</h3>
+        <p class="tape-item-body">Jenny Johnson, CEO of the $1.5 trillion asset manager, made the case that institutional focus on Bitcoin obscures the more consequential opportunity in tokenized real-world assets. Her comments came during a fintech conference keynote.</p>
+        <div class="tape-item-take">
+          <strong>Why it matters for our readers</strong>
+          When the head of a $1.5T asset manager publicly names tokenization as the biggest opportunity in finance, the conversation stops being about whether and starts being about when.
+        </div>
+        <div class="tape-item-source">Source: CoinDesk</div>
+      </article>
+
+    </div>
+
+    <div class="tape-footer">
+      <a href="/news.html" class="tape-archive-link">See the full archive →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     EDITORIAL / CORNERSTONE GRID
+     ============================================ -->
+<section class="editorial-section" id="features">
   <div class="section-inner">
     <div class="section-head">
       <div class="section-head-text">
-        <div class="section-eyebrow">This Week's Reporting</div>
+        <div class="section-eyebrow">Cornerstone Coverage</div>
         <h2 class="section-title">The stories shaping <em>women's</em> crypto wealth</h2>
       </div>
-      <a href="#all-stories" class="section-link">All Stories →</a>
+      <a href="/learn.html" class="section-link">All Coverage →</a>
     </div>
 
     <div class="editorial-grid">
-      <article class="story-card featured">
-        <div class="story-img story-img-1" role="img" aria-label="BlackRock BUIDL tokenized treasury fund"></div>
-        <div class="story-cat">RWA · ANALYSIS</div>
-        <h3 class="story-title">BlackRock's BUIDL just crossed $3B. Here's why every woman building wealth should care.</h3>
-        <p class="story-excerpt">Tokenized Treasuries are the quiet revolution. They're conservative, they yield 4-5%, they settle 24/7, and they're the on-ramp women have been waiting for. We break down what BUIDL, Ondo, and Maple mean for portfolios that aren't chasing 100x.</p>
-        <div class="story-meta"><strong>RWA</strong> · 9 min read · Updated today</div>
-      </article>
+      <a href="/tokenized-real-estate.html" class="story-card featured">
+        <div class="story-img" role="img" aria-label="Tokenized real estate fractional ownership"></div>
+        <div class="story-cat">RWA · DEEP DIVE</div>
+        <h3 class="story-title">Tokenized real estate: hype, reality, and where it actually works in 2026</h3>
+        <p class="story-excerpt">Fractional ownership of buildings sounds like the future. Sometimes it is. Often it's a wrapper around bad property. We break down the platforms, the legal structures, and how to tell the difference.</p>
+        <div class="story-meta"><strong>RWA</strong> · 12 min read · Updated this week</div>
+      </a>
 
-      <article class="story-card">
-        <div class="story-img story-img-2" role="img" aria-label="Stablecoin yield strategies"></div>
+      <a href="/stablecoin-yield-ranked.html" class="story-card">
+        <div class="story-img" role="img" aria-label="Stablecoin yield strategies"></div>
         <div class="story-cat">DeFi · GUIDE</div>
         <h3 class="story-title">Stablecoin yield without the smoke and mirrors</h3>
         <p class="story-excerpt">A risk-graded look at where you can actually earn 5-12% on USDC right now, and which "yields" are accidents waiting to happen.</p>
-        <div class="story-meta"><strong>DeFi</strong> · 6 min read</div>
-      </article>
+        <div class="story-meta"><strong>DeFi</strong> · 9 min read</div>
+      </a>
 
-      <article class="story-card">
-        <div class="story-img story-img-3" role="img" aria-label="Crypto regulation United States"></div>
-        <div class="story-cat">REGULATION</div>
-        <h3 class="story-title">The CLARITY Act, decoded: what changes for retail investors</h3>
-        <p class="story-excerpt">After years of regulatory whiplash, the rules are finally settling. What it means for self-custody, exchanges, and your taxes.</p>
-        <div class="story-meta"><strong>Policy</strong> · 5 min read</div>
-      </article>
+      <a href="/rwa-primer.html" class="story-card">
+        <div class="story-img" role="img" aria-label="RWA real world assets primer"></div>
+        <div class="story-cat">RWA · PRIMER</div>
+        <h3 class="story-title">What RWA actually means (and why it matters for women)</h3>
+        <p class="story-excerpt">The plain-English explainer on tokenized treasuries, real estate, and private credit. The terminology, the players, and where to start small.</p>
+        <div class="story-meta"><strong>RWA</strong> · 8 min read</div>
+      </a>
 
-      <article class="story-card">
-        <div class="story-img story-img-4" role="img" aria-label="Crypto scam prevention"></div>
+      <a href="/crypto-scams-2026.html" class="story-card">
+        <div class="story-img" role="img" aria-label="Crypto scam prevention"></div>
         <div class="story-cat">SECURITY</div>
         <h3 class="story-title">The five scams targeting women in crypto right now</h3>
-        <p class="story-excerpt">Pig butchering, fake romance, AI deepfake "advisors." We talked to women who lost and women who almost lost, and built the field guide.</p>
+        <p class="story-excerpt">Pig butchering, fake romance, AI deepfake "advisors." We built the field guide to recognizing and avoiding the scams most likely to hit you.</p>
         <div class="story-meta"><strong>Security</strong> · 8 min read</div>
-      </article>
+      </a>
 
-      <article class="story-card">
-        <div class="story-img story-img-5" role="img" aria-label="Tokenized real estate"></div>
-        <div class="story-cat">RWA · DEEP DIVE</div>
-        <h3 class="story-title">Tokenized real estate: hype, reality, and where it actually works</h3>
-        <p class="story-excerpt">Fractional ownership of buildings sounds like the future. Sometimes it is. Often it's a wrapper around bad property. How to tell.</p>
-        <div class="story-meta"><strong>RWA</strong> · 12 min read</div>
-      </article>
+      <a href="/crypto-wallets-guide.html" class="story-card">
+        <div class="story-img" role="img" aria-label="Crypto wallet guide"></div>
+        <div class="story-cat">FOUNDATIONS</div>
+        <h3 class="story-title">Hot, cold, and the in-between: choosing your crypto wallet</h3>
+        <p class="story-excerpt">Why "not your keys, not your coins" matters more than ever, and how to actually self-custody without losing sleep or your seed phrase.</p>
+        <div class="story-meta"><strong>Foundations</strong> · 10 min read</div>
+      </a>
 
-      <article class="story-card">
-        <div class="story-img story-img-1" role="img" aria-label="Women crypto founders"></div>
-        <div class="story-cat">PROFILE</div>
-        <h3 class="story-title">The women quietly building the rails of Web3 finance</h3>
-        <p class="story-excerpt">Five founders you haven't heard of yet, running infrastructure, custody, compliance, and tokenization platforms moving billions.</p>
-        <div class="story-meta"><strong>Profile</strong> · 14 min read</div>
-      </article>
+      <a href="/crypto-taxes-2026.html" class="story-card">
+        <div class="story-img" role="img" aria-label="Crypto taxes guide for women"></div>
+        <div class="story-cat">TAXES</div>
+        <h3 class="story-title">Crypto taxes for US women, demystified</h3>
+        <p class="story-excerpt">What triggers tax, what doesn't, which software actually works, and the costly mistakes we keep seeing in tax season after tax season.</p>
+        <div class="story-meta"><strong>Taxes</strong> · 11 min read</div>
+      </a>
     </div>
   </div>
 </section>
@@ -1249,7 +1522,7 @@ section { padding: 100px 0; }
 
     <div class="rwa-grid">
       <div class="rwa-lead">
-        <p>Real-World Assets (tokenized Treasuries, tokenized real estate, tokenized private credit, tokenized gold) are the bridge between traditional finance and crypto that institutions have been quietly building for three years. As of April 2026, over <strong>$30 billion</strong> in RWAs sit on-chain (excluding stablecoins). BlackRock's BUIDL fund alone has crossed $3B.</p>
+        <p>Real-World Assets (tokenized Treasuries, tokenized real estate, tokenized private credit, tokenized gold) are the bridge between traditional finance and crypto that institutions have been quietly building for three years. As of May 2026, over <strong>$32 billion</strong> in RWAs sit on-chain (excluding stablecoins). BlackRock's BUIDL fund alone has crossed $3B.</p>
         <p>This matters for women specifically. Studies consistently show female investors prefer conservative, yield-bearing, fundamentals-backed assets. RWAs deliver exactly that (real cash flows, audited backing, regulatory clarity) with the 24/7 settlement and fractional ownership that blockchain unlocks.</p>
         <p>This isn't speculation. It's infrastructure. And the women who learn it now will be the advisors, builders, and allocators of the next decade.</p>
         <a href="/rwa-primer.html" class="rwa-cta">Read the RWA Primer</a>
@@ -1257,8 +1530,8 @@ section { padding: 100px 0; }
 
       <div class="rwa-stats">
         <div class="rwa-stat-item">
-          <div class="rwa-stat-num">$30<em>B</em>+</div>
-          <div class="rwa-stat-desc">On-chain RWA value as of April 2026, excluding stablecoins. Up 140% in 15 months.</div>
+          <div class="rwa-stat-num">$32<em>B</em>+</div>
+          <div class="rwa-stat-desc">On-chain RWA value as of May 2026, excluding stablecoins. Up over 200% in 15 months.</div>
         </div>
         <div class="rwa-stat-item">
           <div class="rwa-stat-num">45<em>%</em></div>
@@ -1283,51 +1556,51 @@ section { padding: 100px 0; }
         <div class="section-eyebrow">Start Here</div>
         <h2 class="section-title">Crypto for women, <em>without</em> the gatekeeping</h2>
       </div>
-      <a href="#all-guides" class="section-link">All Guides →</a>
+      <a href="/learn.html" class="section-link">All Guides →</a>
     </div>
 
     <div class="learn-grid">
-      <article class="learn-card">
+      <a href="/first-100-crypto.html" class="learn-card">
         <div class="learn-num">01 / FOUNDATIONS</div>
         <h3>Your first $100 in crypto, the safe way</h3>
         <p>Which exchange. Which two-factor setup. What to buy first. What never to do. The 20-minute walkthrough every woman entering crypto deserves but rarely gets.</p>
-        <a href="/first-100-crypto.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
 
-      <article class="learn-card">
+      <a href="/crypto-wallets-guide.html" class="learn-card">
         <div class="learn-num">02 / WALLETS</div>
         <h3>Hot, cold, and the in-between: choosing your wallet</h3>
         <p>Why "not your keys, not your coins" matters more than ever, and how to actually self-custody without losing sleep (or your seed phrase).</p>
-        <a href="/crypto-wallets-guide.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
 
-      <article class="learn-card">
+      <a href="/stablecoin-yield-ranked.html" class="learn-card">
         <div class="learn-num">03 / YIELD</div>
         <h3>Earning yield on stablecoins, ranked by risk</h3>
         <p>From regulated platforms paying 4% to DeFi protocols paying 12%, what each tier actually means and how to size your exposure intelligently.</p>
-        <a href="/stablecoin-yield-ranked.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
 
-      <article class="learn-card">
+      <a href="/rwa-primer.html" class="learn-card">
         <div class="learn-num">04 / RWA</div>
         <h3>What RWA actually means (and why it matters)</h3>
         <p>The plain-English explainer on tokenized treasuries, real estate, and private credit. The terminology, the players, and where to start small.</p>
-        <a href="/rwa-primer.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
 
-      <article class="learn-card">
+      <a href="/crypto-taxes-2026.html" class="learn-card">
         <div class="learn-num">05 / TAXES</div>
         <h3>Crypto taxes for US women, demystified</h3>
         <p>What triggers tax, what doesn't, which software actually works, and the costly mistakes we keep seeing in tax season after tax season.</p>
-        <a href="/crypto-taxes-2026.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
 
-      <article class="learn-card">
+      <a href="/crypto-scams-2026.html" class="learn-card">
         <div class="learn-num">06 / SECURITY</div>
         <h3>How to spot a scam before it costs you</h3>
         <p>The current playbook of crypto fraudsters (pig butchering, romance scams, deepfakes) and the five checks that catch 90% of them.</p>
-        <a href="/crypto-scams-2026.html" class="learn-link">Read the Guide →</a>
-      </article>
+        <span class="learn-link">Read the Guide →</span>
+      </a>
     </div>
   </div>
 </section>
@@ -1367,21 +1640,21 @@ section { padding: 100px 0; }
 </section>
 
 <!-- ============================================
-     NEWSLETTER CTA (SECOND)
+     NEWSLETTER CTA (SECOND) - TOKENIZED REPORT
      ============================================ -->
 <section style="background: var(--ink); color: var(--paper); padding: 100px 0; text-align: center;" id="newsletter">
   <div class="section-inner" style="max-width: 720px;">
     <div class="section-eyebrow" style="color: var(--gold);">The Newsletter</div>
-    <h2 class="section-title" style="color: var(--paper); margin-bottom: 24px;">One email. Weekly. <em>No noise.</em></h2>
+    <h2 class="section-title" style="color: var(--paper); margin-bottom: 24px;">Get <em>Tokenized Report</em> every Sunday.</h2>
     <p style="font-size: 17px; line-height: 1.7; color: rgba(250,247,242,0.7); margin-bottom: 40px;">
-      The week in crypto, written for women who don't have time for the rest of crypto Twitter. Three stories, one chart, one tactic you can use, one founder worth knowing. Delivered Sundays.
+      The weekly editorial brief on real-world assets, stablecoin yield, and digital ownership. Independent journalism for women building wealth in digital assets. Sundays in your inbox.
     </p>
     <form class="hero-form" style="margin: 0 auto; max-width: 480px;" onsubmit="handleSubscribe(event)">
       <input type="email" placeholder="your@email.com" required style="background: var(--paper); border-color: var(--paper);">
       <button type="submit" style="background: var(--gold); color: var(--ink);">Subscribe Free</button>
     </form>
     <div class="hero-microcopy" style="color: rgba(250,247,242,0.5); margin-top: 20px;">
-      Joining <strong style="color: var(--gold);">2,800+ women</strong> who read every Sunday
+      No price predictions. No shilling. No bro energy. <strong style="color: var(--gold);">Unsubscribe anytime.</strong>
     </div>
   </div>
 </section>
@@ -1417,7 +1690,7 @@ section { padding: 100px 0; }
       </div>
       <div class="faq-item" onclick="this.classList.toggle('open')">
         <div class="faq-q">Who founded WICG?</div>
-        <div class="faq-a">WICG was founded in 2021 by a community of women already active in crypto education and content. We grew from a private Facebook group of a few hundred to over 8,000 members, and the publication launched in 2026 to serve that audience and the broader female crypto demographic, now 41% of all new crypto users globally.</div>
+        <div class="faq-a">WICG was founded by Julie James in 2021. What started as a private Facebook group of a few hundred women has grown into a community of over 8,000 members and the independent publication you're reading now. The publication launched in 2026 to serve that community and the broader female crypto demographic, now 44% of new US wallet registrations.</div>
       </div>
     </div>
   </div>
@@ -1442,16 +1715,16 @@ section { padding: 100px 0; }
             <div class="footer-brand-tag">NEWS · ANALYSIS · COMMUNITY</div>
           </div>
         </div>
-        <p>The leading independent media platform for women in cryptocurrency, blockchain, and Web3. Founded 2021.</p>
+        <p>The leading independent media platform for women in cryptocurrency, blockchain, and Web3. Founded 2021. Publisher of Tokenized Report.</p>
       </div>
       <div class="footer-col">
         <h4>Sections</h4>
         <ul>
-          <li><a href="/#news">Daily News</a></li>
+          <li><a href="/news.html">The Tape</a></li>
           <li><a href="/rwa-primer.html">RWA &amp; Tokenization</a></li>
           <li><a href="/defi.html">DeFi</a></li>
-          <li><a href="/learn.html">Beginner Guides</a></li>
-          <li><a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener">Community</a></li>
+          <li><a href="/learn.html">Learn Hub</a></li>
+          <li><a href="/tokenized.html">Newsletter</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1465,9 +1738,10 @@ section { padding: 100px 0; }
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Sister Site</h4>
+        <h4>The Newsletter</h4>
         <ul>
-          <li><a href="https://hotofftheblockchain.com" target="_blank" rel="noopener">Hot Off The Blockchain</a></li>
+          <li><a href="https://tokenized.report" target="_blank" rel="noopener">Tokenized Report</a></li>
+          <li><a href="/tokenized.html">Subscribe</a></li>
           <li><a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener">Facebook Community</a></li>
         </ul>
       </div>
@@ -1536,8 +1810,8 @@ async function loadTicker() {
 function handleSubscribe(e) {
   e.preventDefault();
   const email = e.target.querySelector('input[type="email"]').value;
-  alert(`Thanks! ${email} added to the WICG newsletter list. (Connect this form to your email platform: Beehiiv, Substack, or ConvertKit.)`);
-  e.target.reset();
+  // Redirect to /tokenized page where Beehiiv form will be embedded
+  window.location.href = '/tokenized.html?email=' + encodeURIComponent(email);
 }
 
 loadTicker();
