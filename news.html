@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The Tape: Crypto News for Women Building Wealth | Women in Crypto Global</title>
+<meta name="description" content="The Tape is the curated news archive from Women in Crypto Global. Real-world assets, stablecoin yield, regulation, and institutional moves in crypto, framed for women building wealth in digital assets. Updated weekly.">
+<meta name="keywords" content="crypto news for women, RWA news, tokenization news, stablecoin yield news, crypto regulation 2026, women in crypto news, institutional crypto news">
+<meta name="author" content="Women in Crypto Global">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://womenincryptoglobal.com/news">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://womenincryptoglobal.com/news">
+<meta property="og:title" content="The Tape: Crypto News Curated for Women Building Wealth">
+<meta property="og:description" content="What we are watching this week, with editorial commentary, from Women in Crypto Global.">
+<meta property="og:image" content="https://womenincryptoglobal.com/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3EW%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --paper-pure: #ffffff;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+  --maxw: 760px;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+
+/* SITE HEADER (matches WICG) */
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.header-meta {
+  max-width: var(--maxw-wide);
+  margin: 0 auto 12px;
+  padding: 0 var(--gutter);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: '';
+  position: absolute;
+  top: 4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 22px;
+  text-align: center;
+  display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+}
+.masthead-title em { font-style: italic; font-weight: 400; color: var(--gold-deep); }
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: var(--ink);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+.nav-bar { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.nav-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.nav-inner a {
+  padding: 14px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.nav-inner a:hover { color: var(--gold-deep); }
+.nav-inner a.active { color: var(--gold-deep); border-bottom: 2px solid var(--gold-deep); }
+
+/* BREADCRUMB */
+.breadcrumb {
+  max-width: var(--maxw-wide);
+  margin: 40px auto 0;
+  padding: 0 var(--gutter);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--gold-deep); }
+.breadcrumb span { margin: 0 8px; }
+
+/* PAGE HEADER */
+.page-header {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 32px var(--gutter) 40px;
+  text-align: center;
+}
+.page-category {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 6px 12px;
+  margin-bottom: 24px;
+}
+.page-title {
+  font-family: var(--font-serif);
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -3px;
+  color: var(--ink);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.page-title em {
+  font-style: italic;
+  color: var(--gold-deep);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: -1px;
+}
+.page-deck {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(18px, 2.5vw, 24px);
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+
+/* FILTERS */
+.filters-bar {
+  max-width: var(--maxw-wide);
+  margin: 32px auto 0;
+  padding: 0 var(--gutter);
+}
+.filters-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.filter-btn:hover { background: var(--ink); color: var(--paper); }
+.filter-btn.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ARCHIVE */
+.archive {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 80px;
+}
+.archive-month {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin: 48px 0 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--ink);
+}
+.archive-month:first-child { margin-top: 0; }
+
+.archive-item {
+  padding: 28px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.archive-item-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.archive-item-category {
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 4px 8px;
+}
+.archive-item-date { color: var(--muted); }
+.archive-item-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(20px, 2.4vw, 26px);
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.archive-item-headline em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+.archive-item-body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--text-body);
+  margin-bottom: 14px;
+}
+.archive-item-take {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  padding-left: 18px;
+  border-left: 2px solid var(--gold);
+  margin-bottom: 14px;
+}
+.archive-item-take strong {
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  display: block;
+  margin-bottom: 4px;
+}
+.archive-item-source {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.archive-item-source a {
+  color: var(--gold-deep);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 1px;
+}
+
+/* NEWSLETTER CTA */
+.newsletter-cta {
+  background: var(--paper-warm);
+  padding: 64px 0;
+  margin-top: 0;
+}
+.newsletter-cta-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.newsletter-cta-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 18px;
+}
+.newsletter-cta-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--ink);
+  margin-bottom: 14px;
+  letter-spacing: -1px;
+}
+.newsletter-cta-title em { font-style: italic; color: var(--gold-deep); }
+.newsletter-cta-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+.newsletter-cta-btn {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 28px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+}
+.newsletter-cta-btn:hover { background: var(--gold-deep); }
+
+/* FOOTER (matches WICG) */
+.footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 56px 0 32px;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.footer-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.footer-brand-name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.footer-brand-name em { font-style: italic; font-weight: 400; color: var(--gold-light); }
+.footer-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 28px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.footer-links a { color: var(--paper); opacity: 0.85; }
+.footer-links a:hover { opacity: 1; color: var(--gold-light); }
+.footer p {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+@media (max-width: 720px) {
+  .nav-inner { gap: 18px; }
+  .nav-inner a { font-size: 11px; }
+  .filters-inner { justify-content: flex-start; }
+  .filter-btn { font-size: 9px; padding: 6px 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-meta">EST. 2021 · INDEPENDENT</div>
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">WOMEN<em> in </em>CRYPTO</div>
+      <div class="masthead-sub">Global</div>
+    </a>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="/">Home</a>
+    <a href="/news.html" class="active">The Tape</a>
+    <a href="/learn.html">Learn</a>
+    <a href="/tokenized.html">Newsletter</a>
+    <a href="/our-mission.html">About</a>
+    <a href="/partner-with-us.html">Partner</a>
+  </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a><span>·</span>The Tape
+</nav>
+
+<header class="page-header">
+  <div class="page-category">Curated News · Updated Weekly</div>
+  <h1 class="page-title">The <em>Tape</em></h1>
+  <p class="page-deck">What we are watching in real-world assets, stablecoin yield, tokenization, and the regulatory landscape shaping digital ownership. Edited. Contextualized. With our take on why it matters for women building wealth.</p>
+</header>
+
+<div class="filters-bar">
+  <div class="filters-inner">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="rwa">RWA</button>
+    <button class="filter-btn" data-filter="regulation">Regulation</button>
+    <button class="filter-btn" data-filter="stablecoin-yield">Stablecoin Yield</button>
+    <button class="filter-btn" data-filter="institutional">Institutional</button>
+    <button class="filter-btn" data-filter="tokenized-real-estate">Tokenized Real Estate</button>
+    <button class="filter-btn" data-filter="worth-reading">Worth Reading</button>
+  </div>
+</div>
+
+<section class="archive">
+
+  <!-- ============================================================ -->
+  <!-- MAY 2026                                                      -->
+  <!-- ============================================================ -->
+  <div class="archive-month">May 2026</div>
+
+  <article class="archive-item" data-category="rwa">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">RWA</span>
+      <span class="archive-item-date">May 23, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">Tokenized US Treasuries cross <em>$13 billion</em> on-chain, up from $2B at start of 2025</h2>
+    <p class="archive-item-body">RWA.xyz data shows the on-chain value of tokenized US Treasuries reached $13.1 billion this month. BlackRock's BUIDL and Ondo's OUSG dominate the category, with Franklin Templeton's BENJI now contributing meaningfully.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      This is the crypto market most relevant to conservative income strategies. It is not speculative. It is regulated treasury exposure with on-chain settlement, paying real yield.
+    </div>
+    <div class="archive-item-source">Source: <a href="https://rwa.xyz" target="_blank" rel="noopener">RWA.xyz</a></div>
+  </article>
+
+  <article class="archive-item" data-category="regulation">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">Regulation</span>
+      <span class="archive-item-date">May 22, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">SEC clarifies tokenized equity framework, opens path for <em>broader institutional adoption</em></h2>
+    <p class="archive-item-body">New SEC guidance this week provides regulatory clarity on tokenized equities, distinguishing them from speculative crypto assets. The framework allows registered broker-dealers to issue and trade tokenized stocks under existing securities law.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      Regulatory clarity is the single biggest unlock for institutional capital in this space. When the SEC names the rules, asset managers move.
+    </div>
+    <div class="archive-item-source">Source: <a href="#" target="_blank" rel="noopener">SEC Press Release</a></div>
+  </article>
+
+  <article class="archive-item" data-category="stablecoin-yield">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">Stablecoin Yield</span>
+      <span class="archive-item-date">May 21, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">Yield-bearing stablecoins on pace to <em>triple to $50B</em> by year-end</h2>
+    <p class="archive-item-body">21Shares research projects yield-bearing stablecoins will more than triple to over $50 billion in 2026, driven by institutional treasury allocation and embedded wallet products.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      The shift from stablecoins as parking lots to stablecoins as yield assets is the most consequential structural change in crypto for income-focused portfolios. Worth understanding before allocating.
+    </div>
+    <div class="archive-item-source">Source: <a href="#" target="_blank" rel="noopener">21Shares Research</a></div>
+  </article>
+
+  <article class="archive-item" data-category="institutional">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">Institutional</span>
+      <span class="archive-item-date">May 20, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">BlackRock's BUIDL expands to <em>Polygon</em>, signaling multi-chain RWA commitment</h2>
+    <p class="archive-item-body">BlackRock's tokenized treasury fund is now available on Polygon in addition to Ethereum, following months of internal evaluation. The expansion brings lower-fee access to retail-scale investors.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      When a $10 trillion asset manager commits engineering resources to multi-chain tokenization, the infrastructure assumption shifts. This is no longer experimental.
+    </div>
+    <div class="archive-item-source">Source: <a href="#" target="_blank" rel="noopener">Bloomberg</a></div>
+  </article>
+
+  <article class="archive-item" data-category="tokenized-real-estate">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">Tokenized Real Estate</span>
+      <span class="archive-item-date">May 19, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">Lofty hits <em>10,000 active investors</em> on Algorand-based real estate platform</h2>
+    <p class="archive-item-body">Tokenized real estate platform Lofty reported 10,000 active investors this month, with minimum investment thresholds as low as $50 for fractional residential property exposure.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      The promise of tokenized real estate, fractional access to property markets, is starting to deliver at meaningful scale. Worth watching as a category, not yet recommending as an allocation.
+    </div>
+    <div class="archive-item-source">Source: <a href="#" target="_blank" rel="noopener">Lofty</a></div>
+  </article>
+
+  <article class="archive-item" data-category="worth-reading">
+    <div class="archive-item-meta">
+      <span class="archive-item-category">Worth Reading</span>
+      <span class="archive-item-date">May 18, 2026</span>
+    </div>
+    <h2 class="archive-item-headline">Franklin Templeton CEO: <em>"Bitcoin is the biggest distraction"</em> from tokenized assets</h2>
+    <p class="archive-item-body">Jenny Johnson, CEO of the $1.5 trillion asset manager, made the case that institutional focus on Bitcoin obscures the more consequential opportunity in tokenized real-world assets. Her comments came during a fintech conference keynote.</p>
+    <div class="archive-item-take">
+      <strong>Why it matters for our readers</strong>
+      When the head of a $1.5T asset manager publicly names tokenization as the biggest opportunity in finance, the conversation stops being about whether and starts being about when.
+    </div>
+    <div class="archive-item-source">Source: <a href="#" target="_blank" rel="noopener">CoinDesk</a></div>
+  </article>
+
+  <!-- ============================================================ -->
+  <!-- ADD MORE ARCHIVE-MONTH BLOCKS BELOW AS YOU ACCUMULATE ITEMS  -->
+  <!-- Group items by month. Newest month at the top.              -->
+  <!-- ============================================================ -->
+
+</section>
+
+<section class="newsletter-cta">
+  <div class="newsletter-cta-inner">
+    <div class="newsletter-cta-eyebrow">Want it in your inbox?</div>
+    <h2 class="newsletter-cta-title">Get The Tape and more in <em>Tokenized Report</em>.</h2>
+    <p class="newsletter-cta-text">Every Sunday, a complete editorial brief on real-world assets, stablecoin yield, and digital ownership. From Women in Crypto Global. No noise.</p>
+    <a href="/tokenized.html" class="newsletter-cta-btn">Subscribe Free</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-mark">
+      <svg width="42" height="42" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#c9a961"/>
+        <line x1="20" y1="32" x2="80" y2="32" stroke="#0a0a0a" stroke-width="2.2"/>
+        <text x="50" y="63" font-family="Playfair Display, serif" font-size="36" font-weight="900" fill="#0a0a0a" text-anchor="middle" letter-spacing="-1.5">W</text>
+        <line x1="20" y1="68" x2="80" y2="68" stroke="#0a0a0a" stroke-width="2.2"/>
+      </svg>
+      <div class="footer-brand-name">Women in Crypto <em>Global</em></div>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-links">
+      <a href="/our-mission.html">Our Mission</a>
+      <a href="/editorial-standards.html">Editorial Standards</a>
+      <a href="/partner-with-us.html">Partner With Us</a>
+      <a href="/careers.html">Careers</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <p>© 2026 WICG · NOT INVESTMENT ADVICE · DYOR</p>
+  </div>
+</footer>
+
+<script>
+// Filter functionality for The Tape archive
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const archiveItems = document.querySelectorAll('.archive-item');
+  const archiveMonths = document.querySelectorAll('.archive-month');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+
+      // Toggle active state on buttons
+      filterButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      // Show/hide items
+      archiveItems.forEach(item => {
+        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Hide month headers that have no visible items
+      archiveMonths.forEach(monthHeader => {
+        let nextSibling = monthHeader.nextElementSibling;
+        let hasVisibleItem = false;
+        while (nextSibling && !nextSibling.classList.contains('archive-month')) {
+          if (nextSibling.classList.contains('archive-item') &&
+              nextSibling.style.display !== 'none') {
+            hasVisibleItem = true;
+            break;
+          }
+          nextSibling = nextSibling.nextElementSibling;
+        }
+        monthHeader.style.display = hasVisibleItem ? '' : 'none';
+      });
+    });
+  });
+});
+</script>
+
+</body>
+</html>
