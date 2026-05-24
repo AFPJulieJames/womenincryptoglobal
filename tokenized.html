@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tokenized Report: The Weekly Newsletter | Women in Crypto Global</title>
+<meta name="description" content="Tokenized Report is the weekly editorial newsletter from Women in Crypto Global. Real-world assets, stablecoin yield, and the financial infrastructure of digital ownership. Independent journalism for women building wealth in digital assets. Sundays in your inbox. Free.">
+<meta name="keywords" content="tokenized newsletter, RWA newsletter, real world assets, stablecoin yield, women in crypto, digital assets, crypto newsletter for women, tokenization, conservative crypto investing, crypto editorial">
+<meta name="author" content="Women in Crypto Global">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://womenincryptoglobal.com/tokenized">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://womenincryptoglobal.com/tokenized">
+<meta property="og:title" content="Tokenized Report. The weekly editorial brief on digital ownership.">
+<meta property="og:description" content="Real-world assets. Stablecoin yield. Tokenization. From Women in Crypto Global. Sundays in your inbox.">
+<meta property="og:image" content="https://womenincryptoglobal.com/og-image.jpg">
+<meta property="og:site_name" content="Women in Crypto Global">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tokenized Report. The weekly editorial brief on digital ownership.">
+<meta name="twitter:description" content="Real-world assets. Stablecoin yield. From Women in Crypto Global. Sundays in your inbox.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230a0a0a'/%3E%3Cline x1='20' y1='32' x2='80' y2='32' stroke='%23c9a961' stroke-width='3'/%3E%3Ctext x='50' y='63' font-family='Playfair Display, Georgia, serif' font-size='36' font-weight='900' fill='%23f5f0e8' text-anchor='middle' letter-spacing='-1.5'%3EW%3C/text%3E%3Cline x1='20' y1='68' x2='80' y2='68' stroke='%23c9a961' stroke-width='3'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ink: #0a0a0a;
+  --ink-soft: #1a1a1a;
+  --paper: #faf7f2;
+  --paper-warm: #f5f0e8;
+  --paper-pure: #ffffff;
+  --gold: #c9a961;
+  --gold-deep: #a8884a;
+  --gold-light: #e8d8b3;
+  --rule: #e5e0d6;
+  --muted: #6b6660;
+  --text-body: #2a2620;
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  --maxw: 760px;
+  --maxw-wide: 1280px;
+  --gutter: clamp(20px, 4vw, 48px);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-sans);
+  background: var(--paper);
+  color: var(--text-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+
+/* SITE HEADER (matches existing WICG site exactly) */
+.site-header { background: var(--paper); padding: 24px 0 0; }
+.header-meta {
+  max-width: var(--maxw-wide);
+  margin: 0 auto 12px;
+  padding: 0 var(--gutter);
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.masthead-wrap {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  position: relative;
+}
+.masthead-wrap::before {
+  content: '';
+  position: absolute;
+  top: 4px; left: 0; right: 0;
+  height: 1px;
+  background: var(--ink);
+}
+.masthead {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 28px var(--gutter) 22px;
+  text-align: center;
+  display: block;
+}
+.masthead-title {
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -2.5px;
+  color: var(--ink);
+}
+.masthead-title em { font-style: italic; font-weight: 400; color: var(--gold-deep); }
+.masthead-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(18px, 2.5vw, 28px);
+  color: var(--ink);
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+.nav-bar { background: var(--paper); border-bottom: 1px solid var(--rule); }
+.nav-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  flex-wrap: wrap;
+}
+.nav-inner a {
+  padding: 14px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.nav-inner a:hover { color: var(--gold-deep); }
+.nav-inner a.active { color: var(--gold-deep); border-bottom: 2px solid var(--gold-deep); }
+
+/* BREADCRUMB */
+.breadcrumb {
+  max-width: var(--maxw);
+  margin: 40px auto 0;
+  padding: 0 var(--gutter);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--gold-deep); }
+.breadcrumb span { margin: 0 8px; }
+
+/* HERO */
+.hero {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 40px var(--gutter) 48px;
+  text-align: center;
+}
+.hero-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  background: rgba(201,169,97,0.1);
+  padding: 8px 14px;
+  margin-bottom: 28px;
+}
+.hero-newsletter-mark {
+  font-family: var(--font-serif);
+  font-size: clamp(50px, 9vw, 96px);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  line-height: 0.95;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.hero-newsletter-mark em { font-style: italic; color: var(--gold-deep); font-weight: 400; text-transform: none; letter-spacing: -1px; }
+.hero-newsletter-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(17px, 2vw, 22px);
+  color: var(--ink);
+  margin-bottom: 36px;
+  letter-spacing: 0.5px;
+}
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4.5vw, 44px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin: 40px auto 24px;
+  max-width: 660px;
+}
+.hero-title em { font-style: italic; color: var(--gold-deep); font-weight: 500; }
+.hero-deck {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.2vw, 21px);
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+/* SIGNUP FORM */
+.signup-block {
+  max-width: 560px;
+  margin: 0 auto;
+  background: var(--paper-warm);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 36px 32px;
+  position: relative;
+}
+.signup-block::before,
+.signup-block::after {
+  content: '';
+  position: absolute;
+  left: 32px;
+  right: 32px;
+  height: 1px;
+  background: var(--gold);
+}
+.signup-block::before { top: 18px; }
+.signup-block::after { bottom: 18px; }
+.signup-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.signup-headline {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 22px;
+}
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.signup-input {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--ink);
+  background: var(--paper-pure);
+  color: var(--ink);
+  border-radius: 2px;
+  width: 100%;
+}
+.signup-input:focus {
+  outline: 2px solid var(--gold);
+  outline-offset: -1px;
+}
+.signup-btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 16px 20px;
+  background: var(--ink);
+  color: var(--paper);
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  border-radius: 2px;
+}
+.signup-btn:hover { background: var(--gold-deep); }
+.signup-note {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 14px;
+  text-transform: uppercase;
+}
+
+/* SECTION RULE */
+.section-rule {
+  max-width: var(--maxw);
+  margin: 72px auto 0;
+  padding: 0 var(--gutter);
+}
+.section-rule-line { height: 1px; background: var(--ink); margin-bottom: 16px; }
+.section-rule-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-align: center;
+}
+
+/* WHAT TO EXPECT */
+.expect-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 48px var(--gutter) 32px;
+}
+.expect-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 36px;
+  text-align: center;
+}
+.expect-headline em { font-style: italic; color: var(--gold-deep); }
+.expect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.expect-item {
+  border-top: 2px solid var(--ink);
+  padding-top: 20px;
+}
+.expect-item-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+.expect-item-title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.expect-item-desc {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--text-body);
+}
+
+/* STAT CALLOUT */
+.stat-callout {
+  max-width: var(--maxw);
+  margin: 64px auto;
+  padding: 0 var(--gutter);
+}
+.stat-callout-inner {
+  background: var(--paper-warm);
+  border-left: 4px solid var(--gold);
+  padding: 32px 36px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.stat-callout-number {
+  font-family: var(--font-serif);
+  font-size: clamp(56px, 9vw, 96px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ink);
+  letter-spacing: -3px;
+  flex-shrink: 0;
+}
+.stat-callout-number em { font-style: italic; color: var(--gold-deep); font-size: 0.6em; font-weight: 400; }
+.stat-callout-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--text-body);
+}
+.stat-callout-text strong { color: var(--ink); font-weight: 600; }
+.stat-callout-source {
+  display: block;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* RELATED CORNERSTONES */
+.related-section {
+  background: var(--paper-warm);
+  padding: 72px 0;
+  margin-top: 72px;
+}
+.related-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.related-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 48px;
+}
+.related-headline em { font-style: italic; color: var(--gold-deep); }
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.related-card {
+  background: var(--paper);
+  padding: 28px 24px;
+  display: block;
+  border-top: 3px solid var(--ink);
+  transition: transform 0.2s ease;
+}
+.related-card:hover { transform: translateY(-3px); }
+.related-cat {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+.related-card h4 {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.related-card p {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+/* SECONDARY CTA */
+.cta-section {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 64px var(--gutter) 80px;
+  text-align: center;
+}
+.cta-headline {
+  font-family: var(--font-serif);
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.cta-headline em { font-style: italic; color: var(--gold-deep); }
+.cta-text {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 auto 32px;
+}
+
+/* FOOTER (matches WICG site exactly) */
+.footer {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 56px 0 32px;
+}
+.footer-inner {
+  max-width: var(--maxw-wide);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+  text-align: center;
+}
+.footer-mark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.footer-brand-name {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.footer-brand-name em { font-style: italic; font-weight: 400; color: var(--gold-light); }
+.footer-rule {
+  width: 80px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 28px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+.footer-links a { color: var(--paper); opacity: 0.85; }
+.footer-links a:hover { opacity: 1; color: var(--gold-light); }
+.footer p {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* MOBILE */
+@media (max-width: 720px) {
+  .expect-grid { grid-template-columns: 1fr; gap: 28px; }
+  .related-grid { grid-template-columns: 1fr; gap: 20px; }
+  .stat-callout-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    padding: 28px 24px;
+  }
+  .signup-block { padding: 32px 24px; }
+  .nav-inner { gap: 18px; }
+  .nav-inner a { font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-meta">EST. 2021 · INDEPENDENT</div>
+  <div class="masthead-wrap">
+    <a href="/" class="masthead">
+      <div class="masthead-title">WOMEN<em> in </em>CRYPTO</div>
+      <div class="masthead-sub">Global</div>
+    </a>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-inner">
+    <a href="/">Home</a>
+    <a href="/#news">News</a>
+    <a href="/#rwa">RWA</a>
+    <a href="/#defi">DeFi</a>
+    <a href="/learn.html">Learn</a>
+    <a href="/#community">Community</a>
+    <a href="/tokenized.html" class="active">Newsletter</a>
+  </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a><span>·</span>Newsletter
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">The Weekly Editorial Newsletter</div>
+  <div class="hero-newsletter-mark">Tokenized<em> Report</em></div>
+  <div class="hero-newsletter-sub">The weekly editorial brief on digital ownership.</div>
+
+  <h1 class="hero-title">Sundays in your inbox. Independent journalism on real-world assets, stablecoin yield, and the financial infrastructure of <em>digital ownership</em>.</h1>
+  <p class="hero-deck">No price predictions. No shilling. No bro energy. Written for the 44% of new US wallet holders who are women, and the founders, advisors, and operators who serve them.</p>
+
+  <div class="signup-block" id="subscribe">
+    <div class="signup-label">Subscribe Free</div>
+    <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
+    <form class="signup-form" action="#" method="post" id="subscribe-form" novalidate>
+      <input type="email" name="email" class="signup-input" placeholder="your@email.com" required aria-label="Email address">
+      <button type="submit" class="signup-btn">Subscribe</button>
+    </form>
+    <div class="signup-note">No spam. Unsubscribe anytime.</div>
+  </div>
+</section>
+
+<div class="section-rule">
+  <div class="section-rule-line"></div>
+  <div class="section-rule-label">What's Inside Every Issue</div>
+</div>
+
+<section class="expect-section">
+  <h2 class="expect-headline">The complete Sunday brief on the parts of crypto that actually <em>build wealth</em>.</h2>
+  <div class="expect-grid">
+    <div class="expect-item">
+      <div class="expect-item-label">The Lead</div>
+      <h3 class="expect-item-title">One deep editorial piece on what mattered this week.</h3>
+      <p class="expect-item-desc">RWA tokenization. Stablecoin yield strategies. Regulatory shifts. Real estate on-chain. We pick the one story worth your attention and analyze it without hype.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">The Numbers</div>
+      <h3 class="expect-item-title">Five data points worth knowing this week.</h3>
+      <p class="expect-item-desc">Tokenized treasury yields. Stablecoin float. RWA market cap. Regulatory developments. One sentence each. Cited sources. No padding.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">The Primer</div>
+      <h3 class="expect-item-title">One concept, fully explained, in 200 words.</h3>
+      <p class="expect-item-desc">Every week we define one term showing up in industry conversation. No jargon assumed. No talking down. Just the clearest possible explanation.</p>
+    </div>
+    <div class="expect-item">
+      <div class="expect-item-label">Worth Reading</div>
+      <h3 class="expect-item-title">Three outside links curated for your time.</h3>
+      <p class="expect-item-desc">The best journalism from the rest of the industry this week. Edited, contextualized, and explained so you know why each piece matters before you click.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stat-callout">
+  <div class="stat-callout-inner">
+    <div class="stat-callout-number">44<em>%</em></div>
+    <div>
+      <div class="stat-callout-text"><strong>Of new US crypto wallets in 2026 are owned by women.</strong> The largest cohort is women aged 45 to 59. They are not chasing memecoins. They are researching tokenized treasuries, stablecoin yield, and real estate on-chain. Tokenized Report is the publication written for them.</div>
+      <span class="stat-callout-source">Source: Coinlaw / Security.org 2026 Demographic Data</span>
+    </div>
+  </div>
+</div>
+
+<section class="related-section">
+  <div class="related-inner">
+    <h2 class="related-headline">Start with our <em>cornerstone guides</em>.</h2>
+    <div class="related-grid">
+      <a href="/tokenized-real-estate.html" class="related-card">
+        <div class="related-cat">RWA · Cornerstone</div>
+        <h4>Tokenized real estate: the complete 2026 guide</h4>
+        <p>How fractional property ownership actually works on-chain. The platforms, the legal wrappers, the real risks. Written without hype.</p>
+      </a>
+      <a href="/stablecoin-yield-ranked.html" class="related-card">
+        <div class="related-cat">Yield · Cornerstone</div>
+        <h4>Stablecoin yield ranked by risk</h4>
+        <p>From regulated platforms paying 4% to DeFi protocols paying 12%, what each tier means and how to size your exposure intelligently.</p>
+      </a>
+      <a href="/crypto-scams-2026.html" class="related-card">
+        <div class="related-cat">Security · Cornerstone</div>
+        <h4>The five crypto scams targeting women right now</h4>
+        <p>Pig butchering, fake romance, AI deepfake "advisors." The field guide to recognizing and avoiding the scams most likely to hit you.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2 class="cta-headline">Sundays just got <em>more useful</em>.</h2>
+  <p class="cta-text">Join the women, founders, advisors, and operators reading Tokenized Report every weekend.</p>
+  <a href="#subscribe" class="signup-btn" style="display:inline-block; text-decoration:none;">Subscribe Free</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-mark">
+      <svg width="42" height="42" viewBox="0 0 100 100">
+        <rect width="100" height="100" fill="#c9a961"/>
+        <line x1="20" y1="32" x2="80" y2="32" stroke="#0a0a0a" stroke-width="2.2"/>
+        <text x="50" y="63" font-family="Playfair Display, serif" font-size="36" font-weight="900" fill="#0a0a0a" text-anchor="middle" letter-spacing="-1.5">W</text>
+        <line x1="20" y1="68" x2="80" y2="68" stroke="#0a0a0a" stroke-width="2.2"/>
+      </svg>
+      <div class="footer-brand-name">Women in Crypto <em>Global</em></div>
+    </div>
+    <div class="footer-rule"></div>
+    <div class="footer-links">
+      <a href="/our-mission.html">Our Mission</a>
+      <a href="/editorial-standards.html">Editorial Standards</a>
+      <a href="/partner-with-us.html">Partner With Us</a>
+      <a href="/careers.html">Careers</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+    <p>© 2026 WICG · NOT INVESTMENT ADVICE · DYOR</p>
+  </div>
+</footer>
+
+<script>
+// Placeholder form handler. Replace with Beehiiv embed code once the platform is set up.
+document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const email = this.querySelector('input[name="email"]').value;
+  if (!email) return;
+  // TODO: Replace this with actual Beehiiv form action or embed
+  alert('Thank you. Once Beehiiv is connected, ' + email + ' will be subscribed. For now, please save this email and add manually until the integration is live.');
+});
+</script>
+
+</body>
+</html>
