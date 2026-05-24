@@ -406,42 +406,55 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   line-height: 1.6;
   color: var(--muted);
   max-width: 540px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   font-weight: 400;
 }
-.hero-form {
-  display: flex;
-  gap: 12px;
-  max-width: 480px;
-  margin-bottom: 20px;
-}
-.hero-form input {
-  flex: 1;
-  padding: 16px 20px;
-  border: 1px solid var(--ink);
+
+/* Beehiiv embed container - editorial card style */
+.beehiiv-embed-card {
   background: var(--paper-pure);
-  font-family: var(--font-sans);
-  font-size: 14px;
-  outline: none;
+  border: 1px solid var(--ink);
+  padding: 28px 28px 24px;
+  max-width: 520px;
+  position: relative;
 }
-.hero-form input:focus { border-color: var(--gold-deep); }
-.hero-form button {
-  padding: 16px 28px;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: background 0.2s;
+.beehiiv-embed-card::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: -1px; right: -1px;
+  height: 4px;
+  background: var(--gold);
 }
-.hero-form button:hover { background: var(--gold-deep); }
-.hero-microcopy {
+.beehiiv-embed-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 8px;
+}
+.beehiiv-embed-headline {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--ink);
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+.beehiiv-embed-headline em {
+  font-style: italic;
+  color: var(--gold-deep);
+}
+.beehiiv-embed-microcopy {
   font-size: 12px;
   color: var(--muted);
   font-family: var(--font-mono);
   letter-spacing: 0.5px;
+  margin-top: 14px;
 }
-.hero-microcopy strong { color: var(--ink); }
+.beehiiv-embed-microcopy strong { color: var(--ink); }
 
 .hero-visual { position: relative; }
 .hero-stat-card {
@@ -1296,14 +1309,17 @@ section { padding: 100px 0; }
       <p class="hero-sub">
         Curated reporting, sharp analysis, and education for the 44% of new wallet holders changing what crypto looks like. Real-world assets, stablecoin yield, regulation that matters. No bro energy, no shilling, no shortcuts.
       </p>
-      <form class="hero-form" id="newsletter-form" onsubmit="handleSubscribe(event)">
-        <label class="sr-only" for="hero-email">Email address</label>
-        <input type="email" id="hero-email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe Free</button>
-      </form>
-      <div class="hero-microcopy">
-        <strong>Tokenized Report</strong> · Sundays in your inbox · No spam, ever
+
+      <!-- BEEHIIV EMBED: Newsletter Signup -->
+      <div class="beehiiv-embed-card">
+        <div class="beehiiv-embed-label">Subscribe Free · Sundays</div>
+        <h2 class="beehiiv-embed-headline">Get <em>Tokenized Report</em> in your inbox.</h2>
+        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+        <div class="beehiiv-embed-microcopy">
+          <strong>No spam, ever.</strong> Unsubscribe anytime.
+        </div>
       </div>
+
     </div>
     <div class="hero-visual">
       <div class="hero-stat-card">
@@ -1624,7 +1640,7 @@ section { padding: 100px 0; }
 </section>
 
 <!-- ============================================
-     COMMUNITY CTA
+     PRO WAITLIST CTA
      ============================================ -->
 <section class="community" id="pro">
   <div class="community-inner">
@@ -1641,37 +1657,20 @@ section { padding: 100px 0; }
       <p style="font-size: 17px; line-height: 1.7; color: var(--muted); margin-bottom: 32px;">
         Waitlist members get first access at launch, a founding-member discount, and the chance to shape what Pro becomes. No credit card required.
       </p>
-      <form class="hero-form" style="max-width: 480px; margin-bottom: 16px;" id="pro-waitlist-form" onsubmit="handleProWaitlist(event)">
-        <label class="sr-only" for="pro-email">Email address</label>
-        <input type="email" id="pro-email" placeholder="your@email.com" required>
-        <button type="submit">Join the Waitlist</button>
-      </form>
-      <div class="hero-microcopy" style="margin-bottom: 32px;">
-        <strong>Free to join</strong> · No spam · Unsubscribe anytime
+
+      <!-- BEEHIIV EMBED: Pro Waitlist -->
+      <div class="beehiiv-embed-card" style="margin-bottom: 24px;">
+        <div class="beehiiv-embed-label">Pro Waitlist · Founding Access</div>
+        <h2 class="beehiiv-embed-headline">Be first <em>when Pro launches</em>.</h2>
+        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="75413980-c294-4996-97f4-a56c5116ff24"></script>
+        <div class="beehiiv-embed-microcopy">
+          <strong>Free to join.</strong> No credit card required.
+        </div>
       </div>
+
       <p style="font-size: 14px; line-height: 1.6; color: var(--muted); padding-top: 24px; border-top: 1px solid var(--rule);">
         Looking for the free community? The <a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener" style="color: var(--gold-deep); border-bottom: 1px solid var(--gold);">8,000-member Facebook group</a> is open to everyone.
       </p>
-    </div>
-  </div>
-</section>
-
-<!-- ============================================
-     NEWSLETTER CTA (SECOND) - TOKENIZED REPORT
-     ============================================ -->
-<section style="background: var(--ink); color: var(--paper); padding: 100px 0; text-align: center;" id="newsletter">
-  <div class="section-inner" style="max-width: 720px;">
-    <div class="section-eyebrow" style="color: var(--gold);">The Newsletter</div>
-    <h2 class="section-title" style="color: var(--paper); margin-bottom: 24px;">Get <em>Tokenized Report</em> every Sunday.</h2>
-    <p style="font-size: 17px; line-height: 1.7; color: rgba(250,247,242,0.7); margin-bottom: 40px;">
-      The weekly editorial brief on real-world assets, stablecoin yield, and digital ownership. Independent journalism for women building wealth in digital assets. Sundays in your inbox.
-    </p>
-    <form class="hero-form" style="margin: 0 auto; max-width: 480px;" onsubmit="handleSubscribe(event)">
-      <input type="email" placeholder="your@email.com" required style="background: var(--paper); border-color: var(--paper);">
-      <button type="submit" style="background: var(--gold); color: var(--ink);">Subscribe Free</button>
-    </form>
-    <div class="hero-microcopy" style="color: rgba(250,247,242,0.5); margin-top: 20px;">
-      No price predictions. No shilling. No bro energy. <strong style="color: var(--gold);">Unsubscribe anytime.</strong>
     </div>
   </div>
 </section>
@@ -1782,7 +1781,7 @@ async function loadTicker() {
     const url = `https://api.coingecko.com/api/v3/simple/price?ids=${coins}&vs_currencies=usd&include_24hr_change=true`;
     const res = await fetch(url);
     const data = await res.json();
-    
+
     const symbolMap = {
       'bitcoin': 'BTC', 'ethereum': 'ETH', 'solana': 'SOL',
       'ripple': 'XRP', 'cardano': 'ADA', 'polkadot': 'DOT',
@@ -1822,23 +1821,6 @@ async function loadTicker() {
     }).join('');
     ticker.innerHTML = items + items;
   }
-}
-
-function handleSubscribe(e) {
-  e.preventDefault();
-  const email = e.target.querySelector('input[type="email"]').value;
-  // Redirect to /tokenized page where Beehiiv form will be embedded
-  window.location.href = '/tokenized.html?email=' + encodeURIComponent(email);
-}
-
-function handleProWaitlist(e) {
-  e.preventDefault();
-  const email = e.target.querySelector('input[type="email"]').value;
-  // TODO: Replace with Beehiiv embed code that tags subscriber as 'pro-waitlist'
-  // For now, redirect to a dedicated waitlist page (build /pro.html later)
-  // OR connect directly to Beehiiv API endpoint with tag parameter
-  alert('Thanks! Once Beehiiv is connected, ' + email + ' will be added to the Tokenized Report Pro waitlist. You will be the first to know when Pro launches.');
-  e.target.reset();
 }
 
 loadTicker();
