@@ -1322,7 +1322,9 @@ section { padding: 100px 0; }
       <div class="beehiiv-embed-card" id="subscribe">
         <div class="beehiiv-embed-label">Subscribe Free · Sundays</div>
         <h2 class="beehiiv-embed-headline">Get <em>Tokenized Report</em> in your inbox.</h2>
-        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+        <div class="beehiiv-tracker" data-form-type="newsletter">
+           <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
+             </div>
         <div class="beehiiv-embed-microcopy">
           <strong>No spam, ever.</strong> Unsubscribe anytime.
         </div>
@@ -1670,7 +1672,9 @@ section { padding: 100px 0; }
       <div class="beehiiv-embed-card" style="margin-bottom: 24px;">
         <div class="beehiiv-embed-label">Pro Waitlist · Founding Access</div>
         <h2 class="beehiiv-embed-headline">Be first <em>when Pro launches</em>.</h2>
-        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="75413980-c294-4996-97f4-a56c5116ff24"></script>
+        <div class="beehiiv-tracker" data-form-type="pro_waitlist">
+           <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="75413980-c294-4996-97f4-a56c5116ff24"></script>
+             </div>
         <div class="beehiiv-embed-microcopy">
           <strong>Free to join.</strong> No credit card required.
         </div>
@@ -1835,5 +1839,19 @@ loadTicker();
 setInterval(loadTicker, 300000);
 </script>
 
+      <script>
+  document.addEventListener('click', function(e) {
+    const tracker = e.target.closest('.beehiiv-tracker');
+    if (!tracker) return;
+    const formType = tracker.getAttribute('data-form-type') || 'unknown';
+    if (typeof gtag === 'function') {
+      gtag('event', 'subscribe_click', {
+        form_type: formType,
+        page_path: window.location.pathname,
+        page_host: window.location.hostname
+      });
+    }
+  });
+</script>
 </body>
 </html>
