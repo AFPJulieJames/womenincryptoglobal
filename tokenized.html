@@ -570,12 +570,12 @@ a { color: inherit; text-decoration: none; }
 <nav class="nav-bar">
   <div class="nav-inner">
     <a href="/">Home</a>
-    <a href="/news.html">The Tape</a>
-    <a href="/rwa-primer.html">RWA</a>
+    <a href="/#news">News</a>
+    <a href="/#rwa">RWA</a>
+    <a href="/#defi">DeFi</a>
     <a href="/learn.html">Learn</a>
-    <a href="/tokenized.html">Newsletter</a>
-    <a href="https://www.facebook.com/groups/womenincryptoglobal" target="_blank" rel="noopener">Community</a>
-    <a href="/our-mission.html">About</a>
+    <a href="/#community">Community</a>
+    <a href="/tokenized.html" class="active">Newsletter</a>
   </div>
 </nav>
 
@@ -594,10 +594,8 @@ a { color: inherit; text-decoration: none; }
   <div class="signup-block" id="subscribe">
     <div class="signup-label">Subscribe Free</div>
     <h2 class="signup-headline">Get Tokenized Report every Sunday.</h2>
-    <form class="signup-form" action="#" method="post" id="subscribe-form" novalidate>
-      <input type="email" name="email" class="signup-input" placeholder="your@email.com" required aria-label="Email address">
-      <button type="submit" class="signup-btn">Subscribe</button>
-    </form>
+    <!-- Beehiiv embed: Newsletter Signup form -->
+    <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="11e6369a-bdb1-4046-baf9-c135aa93a6a4"></script>
     <div class="signup-note">No spam. Unsubscribe anytime.</div>
   </div>
 </section>
@@ -694,17 +692,6 @@ a { color: inherit; text-decoration: none; }
     <p>© 2026 WICG · NOT INVESTMENT ADVICE · DYOR</p>
   </div>
 </footer>
-
-<script>
-// Placeholder form handler. Replace with Beehiiv embed code once the platform is set up.
-document.getElementById('subscribe-form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  const email = this.querySelector('input[name="email"]').value;
-  if (!email) return;
-  // TODO: Replace this with actual Beehiiv form action or embed
-  alert('Thank you. Once Beehiiv is connected, ' + email + ' will be subscribed. For now, please save this email and add manually until the integration is live.');
-});
-</script>
 
 </body>
 </html>
