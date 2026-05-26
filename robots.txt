@@ -1,0 +1,7 @@
+# Women in Crypto Global - robots.txt
+# https://womenincryptoglobal.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://womenincryptoglobal.com/sitemap.xml
